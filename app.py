@@ -6,6 +6,7 @@ import dash_bootstrap_components as dbc
 
 # === Load preprocessed CSV ===
 df = pd.read_csv("missingness_by_rank.csv")
+df["year"] = df["year"].astype(int)  # Fix: remove decimal years like 2023.0 or 2023.2
 df["rank_bin"] = df["rank_bin"].astype(str)
 
 # === Initialize Dash app ===
@@ -73,3 +74,4 @@ def update_graph(selected_years, selected_countries):
 
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0", port=8080)
+
