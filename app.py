@@ -21,6 +21,20 @@ app.layout = dbc.Container([
 
     dbc.Row([
         dbc.Col([
+            html.Label("Select App Type:", className="small"),
+            dcc.Dropdown(
+                options=[
+                    {"label": "Free", "value": "Free"},
+                    {"label": "Paid", "value": "Paid"}
+                ],
+                value="Free",
+                multi=False,
+                id="type-dropdown",
+                style={"fontSize": "13px"}
+            )
+        ], width=4),
+
+        dbc.Col([
             html.Label("Select Year(s):", className="small"),
             dcc.Dropdown(
                 options=[{"label": str(y), "value": y} for y in sorted(df["year"].unique())],
@@ -50,16 +64,18 @@ app.layout = dbc.Container([
 # === Callback ===
 @app.callback(
     Output("missingness-graph", "figure"),
+    Input("type-dropdown", "value"),
     Input("year-dropdown", "value"),
     Input("country-dropdown", "value")
 )
-def update_graph(selected_years, selected_countries):
+def update_graph(selected_type, selected_years, selected_countries):
     filtered = df[
-        df["year"].isin(selected_years) &
-        df["country"].isin(selected_countries)
+        (df["app_type"] == selected_type) &
+        (df["year"].isin(selected_years)) &
+        (df["country"].isin(selected_countries))
     ].copy()
 
-    filtered["year"] = filtered["year"].astype(str)  # treat as categorical
+    filtered["year"] = filtered["year"].astype(str)
 
     fig = px.bar(
         filtered,
@@ -86,5 +102,3 @@ def update_graph(selected_years, selected_countries):
 # === Run App ===
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0", port=8080)
-
-
