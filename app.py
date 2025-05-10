@@ -10,14 +10,6 @@ df["year"] = df["year"].astype(int)
 df["rank_bin"] = df["rank_bin"].astype(str)
 df["country"] = df["country"].str.lower()
 
-# === Map emoji flags ===
-country_flags = {
-    "us": "🇺🇸", "gb": "🇬🇧", "be": "🇧🇪", "ch": "🇨🇭",
-    "de": "🇩🇪", "dk": "🇩🇰", "es": "🇪🇸", "fr": "🇫🇷",
-    "it": "🇮🇹", "jp": "🇯🇵", "no": "🇳🇴", "pl": "🇵🇱"
-}
-df["flag"] = df["country"].map(country_flags)
-
 # === Initialize Dash app ===
 app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 app.title = "Missing Category Dashboard"
@@ -65,24 +57,26 @@ def update_graph(selected_years, selected_countries):
     filtered = df[
         df["year"].isin(selected_years) &
         df["country"].isin(selected_countries)
-    ].copy()  # ✅ avoid SettingWithCopyWarning
+    ].copy()
+
+    filtered["year"] = filtered["year"].astype(str)  # treat as categorical
 
     fig = px.bar(
         filtered,
         x="rank_bin",
         y="unknown_ratio",
-        color="country",
-        text="flag",
+        color="year",
         barmode="group",
+        hover_data=["country", "year", "unknown_ratio"],
         labels={
             "rank_bin": "App Rank (Grouped by 10)",
             "unknown_ratio": "Unknown Classification (%)",
+            "year": "Year",
             "country": "Country"
         },
-        title="Unknown Classification by Rank Group and Country"
+        title="Unknown Classification by Rank Group and Year"
     )
 
-    fig.update_traces(textposition="outside")
     fig.update_yaxes(ticksuffix="%")
     fig.update_layout(xaxis_tickangle=-45)
 
