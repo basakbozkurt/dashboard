@@ -6,8 +6,17 @@ import dash_bootstrap_components as dbc
 
 # === Load preprocessed CSV ===
 df = pd.read_csv("missingness_by_rank.csv")
-df["year"] = df["year"].astype(int)         # Ensure year is integer
-df["rank_bin"] = df["rank_bin"].astype(str) # Ensure rank_bin is string for plotting
+df["year"] = df["year"].astype(int)
+df["rank_bin"] = df["rank_bin"].astype(str)
+df["country"] = df["country"].str.lower()
+
+# === Map emoji flags ===
+country_flags = {
+    "us": "🇺🇸", "gb": "🇬🇧", "be": "🇧🇪", "ch": "🇨🇭",
+    "de": "🇩🇪", "dk": "🇩🇰", "es": "🇪🇸", "fr": "🇫🇷",
+    "it": "🇮🇹", "jp": "🇯🇵", "no": "🇳🇴", "pl": "🇵🇱"
+}
+df["flag"] = df["country"].map(country_flags)
 
 # === Initialize Dash app ===
 app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
@@ -15,29 +24,31 @@ app.title = "Missing Category Dashboard"
 
 # === Layout ===
 app.layout = dbc.Container([
-    html.H2("Missing Category Labels by App Rank"),
+    html.H2("Missing Category Labels by App Rank", className="mt-3"),
     html.P("Explore how the share of apps with unknown category classification varies by rank group, year, and country."),
 
     dbc.Row([
         dbc.Col([
-            html.Label("Select Year(s):"),
+            html.Label("Select Year(s):", className="small"),
             dcc.Dropdown(
                 options=[{"label": str(y), "value": y} for y in sorted(df["year"].unique())],
                 value=[df["year"].max()],
                 multi=True,
-                id="year-dropdown"
+                id="year-dropdown",
+                style={"fontSize": "13px"}
             )
-        ], width=6),
+        ], width=4),
 
         dbc.Col([
-            html.Label("Select Country(ies):"),
+            html.Label("Select Country(ies):", className="small"),
             dcc.Dropdown(
-                options=[{"label": c, "value": c} for c in sorted(df["country"].unique())],
+                options=[{"label": c.upper(), "value": c} for c in sorted(df["country"].unique())],
                 value=[df["country"].unique()[0]],
                 multi=True,
-                id="country-dropdown"
+                id="country-dropdown",
+                style={"fontSize": "13px"}
             )
-        ], width=6)
+        ], width=4)
     ], className="mb-3"),
 
     dcc.Graph(id="missingness-graph")
@@ -54,23 +65,24 @@ def update_graph(selected_years, selected_countries):
     filtered = df[
         df["year"].isin(selected_years) &
         df["country"].isin(selected_countries)
-    ]
-
-    # ✅ Make year categorical for color (fix gradient legend)
-    filtered["year"] = filtered["year"].astype(str)
+    ].copy()  # ✅ avoid SettingWithCopyWarning
 
     fig = px.bar(
         filtered,
         x="rank_bin",
         y="unknown_ratio",
-        color="year",          # Now treated as discrete
+        color="country",
+        text="flag",
         barmode="group",
         labels={
             "rank_bin": "App Rank (Grouped by 10)",
-            "unknown_ratio": "Unknown Classification (%)"
+            "unknown_ratio": "Unknown Classification (%)",
+            "country": "Country"
         },
-        title="Proportion of Unknown Category Apps by Rank Group"
+        title="Unknown Classification by Rank Group and Country"
     )
+
+    fig.update_traces(textposition="outside")
     fig.update_yaxes(ticksuffix="%")
     fig.update_layout(xaxis_tickangle=-45)
 
@@ -81,5 +93,4 @@ def update_graph(selected_years, selected_countries):
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0", port=8080)
 
-          
 
