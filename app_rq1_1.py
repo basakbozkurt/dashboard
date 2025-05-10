@@ -95,7 +95,9 @@ def update_chart(granularity, app_type, selected_years):
         y="relative_score",
         color="classification",
         labels={"relative_score": "Relative Share (%)", "time": granularity.capitalize()},
-        title=f"RQ1: {granularity.capitalize()} Category Share as Stacked Bar Chart (Sorted)"
+        title=f"RQ1: {granularity.capitalize()} Category Share as Stacked Bar Chart (Sorted)",
+        color_discrete_sequence=px.colors.qualitative.Set3  # 12-color pastel palette
+
     )
 
     fig.update_layout(
