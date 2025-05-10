@@ -6,14 +6,12 @@ import dash_bootstrap_components as dbc
 
 # === Load preprocessed CSV ===
 df = pd.read_csv("missingness_by_rank.csv")
-df["year"] = df["year"].astype(int)         # Ensure year is integer
-df["rank_bin"] = df["rank_bin"].astype(str) # Ensure rank_bin is string for plotting
+df["rank_bin"] = df["rank_bin"].astype(str)
 
 # === Initialize Dash app ===
 app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 app.title = "Missing Category Dashboard"
 
-# === Layout ===
 app.layout = dbc.Container([
     html.H2("Missing Category Labels by App Rank"),
     html.P("Explore how the share of apps with unknown category classification varies by rank group, year, and country."),
@@ -44,7 +42,6 @@ app.layout = dbc.Container([
 ], fluid=True)
 
 
-# === Callback ===
 @app.callback(
     Output("missingness-graph", "figure"),
     Input("year-dropdown", "value"),
@@ -56,14 +53,11 @@ def update_graph(selected_years, selected_countries):
         df["country"].isin(selected_countries)
     ]
 
-    # ✅ Make year categorical for color (fix gradient legend)
-    filtered["year"] = filtered["year"].astype(str)
-
     fig = px.bar(
         filtered,
         x="rank_bin",
         y="unknown_ratio",
-        color="year",          # Now treated as discrete
+        color="year",
         barmode="group",
         labels={
             "rank_bin": "App Rank (Grouped by 10)",
@@ -77,9 +71,5 @@ def update_graph(selected_years, selected_countries):
     return fig
 
 
-# === Run App ===
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0", port=8080)
-
-          
-
