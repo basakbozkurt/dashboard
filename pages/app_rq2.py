@@ -1,11 +1,11 @@
 import pandas as pd
 import os
-from dash import Dash, dcc, html, Input, Output
+from dash import dcc, html, Input, Output, callback
 import dash_bootstrap_components as dbc
 import plotly.express as px
+import dash
 
-# === Paths ===
-#base_path = "/Users/basak/Documents/VS Code/EdTech/EdTech/data/processed/by_country_year/"
+
 
 base_path = "data/by_country_year"  # adjust if needed
 
@@ -18,11 +18,11 @@ def get_available_files():
 all_countries, all_years = get_available_files()
 
 # === Initialize App ===
-app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
-app.title = "App Category Trends Explorer"
+dash.register_page(__name__, path="/rq2",
+                   name="RQ2: App Category Trends Over Time", order=2)
 
 # === Layout ===
-app.layout = dbc.Container([
+layout = dbc.Container([
     html.H2("📱 App Category Trends Over Time", className="my-3"),
 
     dbc.Row([
@@ -69,7 +69,7 @@ app.layout = dbc.Container([
 ])
 
 # === Callback to update app-type dropdown dynamically ===
-@app.callback(
+@callback(
     Output("app-type-dropdown", "options"),
     Output("app-type-dropdown", "value"),
     Input("country-dropdown", "value"),
@@ -92,7 +92,7 @@ def update_app_type_dropdown(country, selected_years):
     return [{"label": a, "value": a} for a in app_types], app_types[0] if app_types else None
 
 # === Main Graph Callback ===
-@app.callback(
+@callback(
     Output("trend-graph", "figure"),
     Input("granularity-dropdown", "value"),
     Input("app-type-dropdown", "value"),
@@ -144,6 +144,3 @@ def update_graph(granularity, app_type, country, selected_years):
     fig.update_yaxes(ticksuffix="%")
     return fig
 
-# === Run App ===
-if __name__ == "__main__":
-    app.run(debug=True, host="0.0.0.0", port=8080)

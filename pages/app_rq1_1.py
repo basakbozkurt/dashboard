@@ -1,13 +1,13 @@
-import os
 import pandas as pd
-from dash import Dash, dcc, html, Input, Output
+from dash import dcc, html, Input, Output
 import dash_bootstrap_components as dbc
 import plotly.express as px
+import dash
+from dash import html, dcc, callback, Input, Output
 
 # === Load Data ===
-data_dir = os.path.join(os.path.dirname(__file__), "data")
-daily_file = os.path.join(data_dir, "global_borda_daily.csv")
-monthly_file = os.path.join(data_dir, "global_borda_monthly.csv")
+daily_file = "data/global_borda_daily.csv"
+monthly_file = "data/global_borda_monthly.csv"
 
 daily_df = pd.read_csv(daily_file)
 monthly_df = pd.read_csv(monthly_file)
@@ -18,17 +18,18 @@ monthly_df["month"] = pd.to_datetime(monthly_df["month"])
 daily_df["year"] = daily_df["date"].dt.year
 monthly_df["year"] = monthly_df["month"].dt.year
 
-# === Initialize App ===
-app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
-app.title = "Global App Category Trends Explorer"
+# === Initialize Dash App ===
 
-# === Layout ===
-app.layout = dbc.Container([
-    html.H2("🌍 Global App Category Trends Over Time", className="my-3"),
+dash.register_page(__name__, path="/rq1_1",
+                    name="RQ1.1: Monthly Category Share as Stacked Bar Chart (Sorted)",
+                    order=2)
+
+layout = dbc.Container([
+    html.H2("RQ1: Monthly Category Share as Stacked Bar Chart (Sorted)", className="my-3"),
 
     dbc.Row([
         dbc.Col([
-            html.Label("Select Granularity"),
+            html.Label("Granularity"),
             dcc.Dropdown(
                 id="granularity-dropdown",
                 options=[
@@ -41,7 +42,7 @@ app.layout = dbc.Container([
         ], width=3),
 
         dbc.Col([
-            html.Label("Select App Type"),
+            html.Label("App Type"),
             dcc.Dropdown(
                 id="app-type-dropdown",
                 options=[{"label": t, "value": t} for t in sorted(daily_df['app_type'].unique())],
@@ -51,7 +52,7 @@ app.layout = dbc.Container([
         ], width=3),
 
         dbc.Col([
-            html.Label("Select Year(s)"),
+            html.Label("Year(s)"),
             dcc.Dropdown(
                 id="year-dropdown",
                 options=[{"label": str(y), "value": y} for y in sorted(daily_df['year'].unique())],
@@ -61,49 +62,53 @@ app.layout = dbc.Container([
         ], width=6),
     ], className="mb-4"),
 
-    dcc.Graph(id="global-trend-graph")
+    dcc.Graph(id="stacked-bar-chart")
 ])
 
-# === Callback ===
-@app.callback(
-    Output("global-trend-graph", "figure"),
+@callback(
+    Output("stacked-bar-chart", "figure"),
     Input("granularity-dropdown", "value"),
     Input("app-type-dropdown", "value"),
     Input("year-dropdown", "value")
 )
-def update_graph(granularity, app_type, selected_years):
+def update_chart(granularity, app_type, selected_years):
     if not selected_years:
-        return px.line(title="⚠️ Please select a year.")
-
-    if not isinstance(selected_years, list):
-        selected_years = [selected_years]
+        return px.bar(title="⚠️ Please select a year.")
 
     df = daily_df if granularity == "daily" else monthly_df
     time_col = "date" if granularity == "daily" else "month"
 
-    dff = df[
+    filtered = df[
         (df["app_type"] == app_type) &
         (df["year"].isin(selected_years)) &
         (df["classification"] != "Unknown")
     ].copy()
 
-    dff["time"] = dff[time_col]
+    filtered["time"] = filtered[time_col]
 
-    agg = dff.groupby(["time", "classification"])["score_borda"].sum().reset_index()
+    agg = filtered.groupby(["time", "classification"])["score_borda"].sum().reset_index()
     agg["relative_score"] = agg.groupby("time")["score_borda"].transform(lambda x: x / x.sum()) * 100
 
-    fig = px.line(
+    # Sort categories within each time for stacked display
+    agg = agg.sort_values(["time", "relative_score"], ascending=[True, False])
+
+    fig = px.bar(
         agg,
         x="time",
         y="relative_score",
         color="classification",
-        labels={"relative_score": "Relative Borda Share (%)", "time": granularity.capitalize()},
-        title=f"Global Category Trends ({granularity.capitalize()})"
+        labels={"relative_score": "Relative Share (%)", "time": granularity.capitalize()},
+        title=f"RQ1: {granularity.capitalize()} Category Share as Stacked Bar Chart (Sorted)",
+        color_discrete_sequence=px.colors.qualitative.Set3  # 12-color pastel palette
+
     )
-    fig.update_layout(height=600, legend_title="Category")
+
+    fig.update_layout(
+        barmode="stack",
+        height=600,
+        legend_title="Category"
+    )
     fig.update_yaxes(ticksuffix="%")
     return fig
 
-# === Run App ===
-if __name__ == "__main__":
-    app.run(debug=True, host="0.0.0.0", port=8080)
+

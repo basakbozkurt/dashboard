@@ -1,25 +1,14 @@
 import pandas as pd
 import plotly.express as px
 import os
-from dash import Dash, dcc, html, Input, Output
+from dash import dcc, html, Input, Output, callback
+import dash
 import dash_bootstrap_components as dbc
 
-""" base_path = "/Users/basak/Documents/VS Code/EdTech/EdTech/data/processed"
-borda_df = pd.read_csv(f"{base_path}/global_borda_monthly.csv")
-mean_df = pd.read_csv(f"{base_path}/global_borda_mean_monthly.csv")
-median_df = pd.read_csv(f"{base_path}/global_borda_median_monthly.csv") """
-
 
 # === Load Data ===
-data_dir = os.path.join(os.path.dirname(__file__), "data")
-daily_file = os.path.join(data_dir, "global_borda_daily.csv")
-monthly_file = os.path.join(data_dir, "global_borda_monthly.csv")
+data_dir = os.path.join(os.path.dirname(__file__), "../data")
 
-daily_df = pd.read_csv(daily_file)
-monthly_df = pd.read_csv(monthly_file)
-
-# === Load Data ===
-data_dir = os.path.join(os.path.dirname(__file__), "data")
 borda_file = os.path.join(data_dir, "global_borda_monthly.csv")
 mean_file = os.path.join(data_dir, "global_borda_mean_monthly.csv")
 median_file = os.path.join(data_dir, "global_borda_median_monthly.csv")
@@ -43,12 +32,13 @@ for df in [borda_df, mean_df, median_df]:
 # Combine all
 all_df = pd.concat([borda_df, mean_df, median_df], ignore_index=True)
 
-# === Dash App ===
-app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
-app.title = "App Category Trend Comparison"
+# === Initialize Dash App ===
+dash.register_page(__name__, path="/dash_method_trends",
+                    name="Compare Category Trends by Aggregation Method",
+                    order=5)
 
 # === Layout ===
-app.layout = dbc.Container([
+layout = dbc.Container([
     html.H2("📊 Compare Category Trends by Aggregation Method", className="my-4"),
 
     dbc.Row([
@@ -94,12 +84,12 @@ app.layout = dbc.Container([
         ], width=4),
     ], className="mb-4"),
 
-    dcc.Graph(id="trend-graph")
+    dcc.Graph(id="trend-graphx")
 ])
 
 # === Callback ===
-@app.callback(
-    Output("trend-graph", "figure"),
+@callback(
+    Output("trend-graphx", "figure"),
     Input("app-type-dropdown", "value"),
     Input("method-dropdown", "value"),
     Input("year-dropdown", "value"),
@@ -131,7 +121,3 @@ def update_graph(app_type, methods, selected_years, category):
     fig.update_layout(height=600, legend_title="Aggregation Method")
     fig.update_yaxes(ticksuffix="%")
     return fig
-
-# === Run App ===
-if __name__ == "__main__":
-    app.run(debug=True)
