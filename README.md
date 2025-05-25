@@ -27,7 +27,7 @@ This repository includes interactive dashboards for visualizing trends in educat
 ### 🔹 Aggregation Method Comparison
 - Compare trends using different aggregation methods: Borda, Mean, Median.
 - Filter by app type, category, year(s), and method(s).
-- ⚖️ [View Dashboard](https://your-deployed-link.com)
+- ⚖️ [https://dashboard-1uzx.onrender.com)
 
 ## Data
 
