@@ -5,8 +5,9 @@ import dash_bootstrap_components as dbc
 import plotly.express as px
 
 # === Load Data ===
-daily_file = "global_borda_daily.csv"
-monthly_file = "global_borda_monthly.csv"
+data_dir = os.path.join(os.path.dirname(__file__), "data")
+daily_file = os.path.join(data_dir, "global_borda_daily.csv")
+monthly_file = os.path.join(data_dir, "global_borda_monthly.csv")
 
 daily_df = pd.read_csv(daily_file)
 monthly_df = pd.read_csv(monthly_file)
