@@ -9,11 +9,25 @@ borda_df = pd.read_csv(f"{base_path}/global_borda_monthly.csv")
 mean_df = pd.read_csv(f"{base_path}/global_borda_mean_monthly.csv")
 median_df = pd.read_csv(f"{base_path}/global_borda_median_monthly.csv") """
 
+
 # === Load Data ===
 data_dir = os.path.join(os.path.dirname(__file__), "data")
-borda_df = os.path.join(data_dir, "global_borda_monthly.csv")
-mean_df = os.path.join(data_dir, "global_borda_mean_monthly.csv")
-median_df = os.path.join(data_dir, "global_borda_median_monthly.csv")
+daily_file = os.path.join(data_dir, "global_borda_daily.csv")
+monthly_file = os.path.join(data_dir, "global_borda_monthly.csv")
+
+daily_df = pd.read_csv(daily_file)
+monthly_df = pd.read_csv(monthly_file)
+
+# === Load Data ===
+data_dir = os.path.join(os.path.dirname(__file__), "data")
+borda_file = os.path.join(data_dir, "global_borda_monthly.csv")
+mean_file = os.path.join(data_dir, "global_borda_mean_monthly.csv")
+median_file = os.path.join(data_dir, "global_borda_median_monthly.csv")
+
+
+borda_df = pd.read_csv(borda_file)
+mean_df = pd.read_csv(mean_file)
+median_df = pd.read_csv(median_file)
 
 # Label and format
 borda_df["method"] = "Borda"
