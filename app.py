@@ -40,4 +40,8 @@ app.layout = html.Div([
 ])
 
 if __name__ == '__main__':
-    app.run(debug=False, port=8080)
+    import os
+    # Set the port and host from environment variables or use defaults
+    port = os.environ.get("PORT", 8080)  # Set default port if not specified
+    host = os.environ.get("HOST", "0.0.0.0")  # Set default host if not specified
+    app.run(debug=False, port=port, host=host)
