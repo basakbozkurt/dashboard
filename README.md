@@ -4,7 +4,7 @@ This repository includes interactive dashboards for visualizing trends in educat
 
 ## Dashboards
 
-- 📊 [View Dashboard](https://dashboard-rq1-1.onrender.com/)
+- 📊 [View Dashboard](https://edtech-yq3e.onrender.com/)
 
 ### 🔹 RQ1: Category Composition Over Time
 - Explore global trends in category visibility by app type and time (daily/monthly).
