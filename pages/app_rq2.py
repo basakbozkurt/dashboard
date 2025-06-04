@@ -19,11 +19,11 @@ all_countries, all_years = get_available_files()
 
 # === Initialize App ===
 dash.register_page(__name__, path="/rq2",
-                   name="RQ2: App Category Trends Over Time", order=2)
+                   name="RQ2: App Category Trends Based on Country-Level Rankings", order=2)
 
 # === Layout ===
 layout = dbc.Container([
-    html.H2("📱 App Category Trends Over Time", className="my-3"),
+    html.H2("📱 App Category Trends Based on Country-Level Rankings", className="my-3"),
 
     dbc.Row([
         dbc.Col([
