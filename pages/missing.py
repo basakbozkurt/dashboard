@@ -63,7 +63,7 @@ layout = dbc.Container([
         ], width=4)
     ], className="mb-3"),
             html.P(
-            "Apps with unknown category labels are excluded from the visualization. Missingness is not random among free apps, it is concentrated in lower ranks, whereas for paid apps, top-ranked apps show higher missing rates. This pattern may introduce bias into category-level trends, so results should be interpreted with caution.",
+            "Missingness is not random. It is concentrated in lower ranks among free apps, whereas for paid apps, top-ranked apps show higher missing rates. This pattern may introduce bias into category-level trends, so results should be interpreted with caution.",
             className="text-muted"
             ),
     dcc.Graph(id="missingness-graph")
