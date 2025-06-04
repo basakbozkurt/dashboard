@@ -6,6 +6,6 @@ dash.register_page(__name__, path='/', order=0,
 
 layout = html.Div([
     html.H1('Welcome to the App Category Dashboard', style={'textAlign': 'center'}),
-    html.P('This dashboard provides insights into app category trends, missing data, and more.'),
-    html.P('Use the navigation menu to explore different analyses and visualizations.'),
+    html.P('This interactive dashboard supports the exploration of educational app trends across global marketplaces.'),
+    html.P('Navigate through the dashboard to access visualizations and analyses focused on app type, ranking position and category composition.'),
 ])
