@@ -62,7 +62,7 @@ layout = dbc.Container([
         ], width=6),
     ], className="mb-4"),
             html.P(
-            "This stacked bar chart visualizes the relative distribution of educational app categories over time using normalized Borda scores aggregated across countries. Each bar represents a time unit (day or month), with segments showing the relative prominence of each category.",
+            "This stacked bar chart visualizes the relative distribution of educational app categories over time, using normalized Borda scores aggregated across countries. Each bar represents a time unit (day or month), with segments showing the relative prominence of each category.",
             className="text-muted"
             ),
     dcc.Graph(id="stacked-bar-chart")
