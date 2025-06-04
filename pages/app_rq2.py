@@ -65,7 +65,7 @@ layout = dbc.Container([
         ], width=3),
     ], className="mb-4"),
         html.P(
-        "This line chart visualizes the temporal distribution of Borda scores across educational app categories.",
+        "This line chart visualizes the temporal distribution of normalised Borda scores across educational app categories.",
         "For each country and time point, category-level Borda scores are computed from national app rankings.",
         "The resulting relative shares capture each category’s prominence within the marketplace over time.",
         className="text-muted"),

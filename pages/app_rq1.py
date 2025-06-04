@@ -65,7 +65,7 @@ layout = dbc.Container([
         ], width=6),
     ], className="mb-4"),
             html.P(
-                "This chart visualizes the global distribution of educational app categories over time, "
+                "This chart visualizes the global distribution of educational app categories over time,"
                 "using normalized Borda scores aggregated from national rankings across countries.",             className="text-muted"
             ),
     dcc.Graph(id="global-trend-graph")
