@@ -64,7 +64,9 @@ layout = dbc.Container([
             )
         ], width=3),
     ], className="mb-4"),
-
+            html.P("Explore how app category shares change over time by country and app type."),  html.P(
+            "This line chart visualizes how the relative share of Borda scores for each educational app category changes over time. Borda scores are aggregated across countries with equal weighting, allowing users to explore global trends.",
+            className="text-muted"),
     dcc.Graph(id="trend-graph")
 ])
 
