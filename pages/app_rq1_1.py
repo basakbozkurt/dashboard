@@ -21,7 +21,7 @@ monthly_df["year"] = monthly_df["month"].dt.year
 # === Initialize Dash App ===
 
 dash.register_page(__name__, path="/rq1_1",
-                    name="RQ1.1: Monthly Category Share as Stacked Bar Chart (Sorted)",
+                    name="RQ1.1: Monthly Category Share as Stacked Bar Chart",
                     order=2)
 
 layout = dbc.Container([
