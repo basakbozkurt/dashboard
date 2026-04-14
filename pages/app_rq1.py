@@ -42,17 +42,7 @@ layout = dbc.Container([
                 value="monthly",
                 clearable=False
             )
-        ], width=3),
-
-        dbc.Col([
-            html.Label("Select App Type"),
-            dcc.Dropdown(
-                id="app-type-dropdown",
-                options=[{"label": t, "value": t} for t in sorted(daily_df['app_type'].unique())],
-                value="Free",
-                clearable=False
-            )
-        ], width=3),
+        ], width=4),
 
         dbc.Col([
             html.Label("Select Year(s)"),
@@ -62,7 +52,7 @@ layout = dbc.Container([
                 value=[2022],
                 multi=True
             )
-        ], width=6),
+        ], width=8),
     ], className="mb-4"),
             html.P(
                 "This chart visualizes the global distribution of educational app categories over time,"
@@ -76,10 +66,9 @@ layout = dbc.Container([
 @callback(
     Output("global-trend-graph", "figure"),
     Input("granularity-dropdown", "value"),
-    Input("app-type-dropdown", "value"),
     Input("year-dropdown", "value")
 )
-def update_graph(granularity, app_type, selected_years):
+def update_graph(granularity, selected_years):
     if not selected_years:
         return px.line(title="⚠️ Please select a year.")
 
@@ -90,7 +79,7 @@ def update_graph(granularity, app_type, selected_years):
     time_col = "date" if granularity == "daily" else "month"
 
     dff = df[
-        (df["app_type"] == app_type) &
+        (df["app_type"] == "Free") &
         (df["year"].isin(selected_years)) &
         (df["classification"] != "Unknown")
     ].copy()

@@ -23,23 +23,9 @@ dash.register_page(__name__, path="/missing",
 # === Layout ===
 layout = dbc.Container([
     html.H2("Missing Category Labels by App Rank", className="mt-3"),
-    html.P("Explore how the share of apps with unknown category classification varies by rank group, year, and country."),
+    html.P("Explore how the share of free apps with unknown category classification varies by rank group, year, and country."),
 
     dbc.Row([
-        dbc.Col([
-            html.Label("Select App Type:", className="small"),
-            dcc.Dropdown(
-                options=[
-                    {"label": "Free", "value": "Free"},
-                    {"label": "Paid", "value": "Paid"}
-                ],
-                value="Free",
-                multi=False,
-                id="type-dropdown",
-                style={"fontSize": "13px"}
-            )
-        ], width=4),
-
         dbc.Col([
             html.Label("Select Year(s):", className="small"),
             dcc.Dropdown(
@@ -49,7 +35,7 @@ layout = dbc.Container([
                 id="year-dropdown",
                 style={"fontSize": "13px"}
             )
-        ], width=4),
+        ], width=6),
 
         dbc.Col([
             html.Label("Select Country(ies):", className="small"),
@@ -60,10 +46,10 @@ layout = dbc.Container([
                 id="country-dropdown",
                 style={"fontSize": "13px"}
             )
-        ], width=4)
+        ], width=6)
     ], className="mb-3"),
             html.P(
-            "Missingness is not random. It is concentrated in lower ranks among free apps, whereas for paid apps, top-ranked apps show higher missing rates. This pattern may introduce bias into category-level trends, so results should be interpreted with caution.",
+            "Missingness is not random. It is concentrated in lower ranks among free apps. This pattern may introduce bias into category-level trends, so results should be interpreted with caution.",
             className="text-muted"
             ),
     dcc.Graph(id="missingness-graph")
@@ -73,13 +59,12 @@ layout = dbc.Container([
 # === Callback ===
 @callback(
     Output("missingness-graph", "figure"),
-    Input("type-dropdown", "value"),
     Input("year-dropdown", "value"),
     Input("country-dropdown", "value")
 )
-def update_graph(selected_type, selected_years, selected_countries):
+def update_graph(selected_years, selected_countries):
     filtered = df[
-        (df["app_type"] == selected_type) &
+        (df["app_type"] == "Free") &
         (df["year"].isin(selected_years)) &
         (df["country"].isin(selected_countries))
     ].copy()

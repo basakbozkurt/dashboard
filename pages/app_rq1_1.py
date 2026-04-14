@@ -1,4 +1,5 @@
 import pandas as pd
+import os
 from dash import dcc, html, Input, Output
 import dash_bootstrap_components as dbc
 import plotly.express as px
@@ -6,8 +7,9 @@ import dash
 from dash import html, dcc, callback, Input, Output
 
 # === Load Data ===
-daily_file = "data/global_borda_daily.csv"
-monthly_file = "data/global_borda_monthly.csv"
+data_dir = os.path.join(os.path.dirname(__file__), "../data")
+daily_file = os.path.join(data_dir, "global_borda_daily.csv")
+monthly_file = os.path.join(data_dir, "global_borda_monthly.csv")
 
 daily_df = pd.read_csv(daily_file)
 monthly_df = pd.read_csv(monthly_file)
@@ -19,10 +21,10 @@ daily_df["year"] = daily_df["date"].dt.year
 monthly_df["year"] = monthly_df["month"].dt.year
 
 # === Initialize Dash App ===
-
-dash.register_page(__name__, path="/rq1_1",
-                    name="RQ1.1: Monthly Category Share as Stacked Bar Chart",
-                    order=2)
+if __name__ != "__main__":
+    dash.register_page(__name__, path="/rq1_1",
+                        name="RQ1.1: Monthly Category Share as Stacked Bar Chart",
+                        order=2)
 
 layout = dbc.Container([
     html.H2("RQ1: Monthly Category Share as Stacked Bar Chart (Sorted)", className="my-3"),
@@ -39,17 +41,7 @@ layout = dbc.Container([
                 value="monthly",
                 clearable=False
             )
-        ], width=3),
-
-        dbc.Col([
-            html.Label("App Type"),
-            dcc.Dropdown(
-                id="app-type-dropdown",
-                options=[{"label": t, "value": t} for t in sorted(daily_df['app_type'].unique())],
-                value="Free",
-                clearable=False
-            )
-        ], width=3),
+        ], width=4),
 
         dbc.Col([
             html.Label("Year(s)"),
@@ -59,7 +51,7 @@ layout = dbc.Container([
                 value=[2022],
                 multi=True
             )
-        ], width=6),
+        ], width=8),
     ], className="mb-4"),
             html.P(
             "This stacked bar chart visualizes the relative distribution of educational app categories over time, using normalized Borda scores aggregated across countries. Each bar represents a time unit (day or month), with segments showing the relative prominence of each category.",
@@ -71,10 +63,9 @@ layout = dbc.Container([
 @callback(
     Output("stacked-bar-chart", "figure"),
     Input("granularity-dropdown", "value"),
-    Input("app-type-dropdown", "value"),
     Input("year-dropdown", "value")
 )
-def update_chart(granularity, app_type, selected_years):
+def update_chart(granularity, selected_years):
     if not selected_years:
         return px.bar(title="⚠️ Please select a year.")
 
@@ -82,7 +73,7 @@ def update_chart(granularity, app_type, selected_years):
     time_col = "date" if granularity == "daily" else "month"
 
     filtered = df[
-        (df["app_type"] == app_type) &
+        (df["app_type"] == "Free") &
         (df["year"].isin(selected_years)) &
         (df["classification"] != "Unknown")
     ].copy()

@@ -40,29 +40,26 @@ layout = dbc.Container([
         ], width=3),
 
         dbc.Col([
-            html.Label("Select App Type"),
-            dcc.Dropdown(id="app-type-dropdown", clearable=False)  # dynamic
-        ], width=2),
-
-        dbc.Col([
-            html.Label("Select Country"),
+            html.Label("Select Country(ies)"),
             dcc.Dropdown(
                 id="country-dropdown",
                 options=[{"label": c.upper(), "value": c} for c in all_countries],
-                value=all_countries[0],
+                value=[all_countries[0]],
+                multi=True,
                 clearable=False
             )
-        ], width=2),
+        ], width=3),
 
         dbc.Col([
-            html.Label("Select Year(s)"),
+            html.Label("Select Year"),
             dcc.Dropdown(
                 id="year-dropdown",
                 options=[{"label": str(y), "value": y} for y in all_years],
-                value=[all_years[-1]],
-                multi=True
+                value=all_years[-1],
+                multi=False,
+                clearable=False
             )
-        ], width=3),
+        ], width=6),
     ], className="mb-4"),
         html.P(
         "This line chart visualizes the temporal distribution of normalised Borda scores across educational app categories. For each country and time point, category-level Borda scores are computed from national app rankings.",
@@ -71,50 +68,31 @@ layout = dbc.Container([
     dcc.Graph(id="trend-graph")
 ])
 
-# === Callback to update app-type dropdown dynamically ===
-@callback(
-    Output("app-type-dropdown", "options"),
-    Output("app-type-dropdown", "value"),
-    Input("country-dropdown", "value"),
-    Input("year-dropdown", "value")
-)
-def update_app_type_dropdown(country, selected_years):
-    if not isinstance(selected_years, list):
-        selected_years = [selected_years]
-
-    dfs = []
-    for y in selected_years:
-        file_path = os.path.join(base_path, f"{country}_{y}.csv")
-        if os.path.exists(file_path):
-            dfs.append(pd.read_csv(file_path))
-    if not dfs:
-        return [], None
-
-    df = pd.concat(dfs, ignore_index=True)
-    app_types = sorted(df['app_type'].dropna().unique())
-    return [{"label": a, "value": a} for a in app_types], app_types[0] if app_types else None
-
 # === Main Graph Callback ===
 @callback(
     Output("trend-graph", "figure"),
     Input("granularity-dropdown", "value"),
-    Input("app-type-dropdown", "value"),
     Input("country-dropdown", "value"),
     Input("year-dropdown", "value")
 )
-def update_graph(granularity, app_type, country, selected_years):
-    if not selected_years or not app_type:
+def update_graph(granularity, selected_countries, selected_years):
+    if not selected_years or not selected_countries:
         return px.line(title="⚠️ Please select valid filters.")
 
     if not isinstance(selected_years, list):
         selected_years = [selected_years]
+    if not isinstance(selected_countries, list):
+        selected_countries = [selected_countries]
 
     # Load only the needed data
     dfs = []
-    for year in selected_years:
-        file_path = os.path.join(base_path, f"{country}_{year}.csv")
-        if os.path.exists(file_path):
-            dfs.append(pd.read_csv(file_path))
+    for country in selected_countries:
+        for year in selected_years:
+            file_path = os.path.join(base_path, f"{country}_{year}.csv")
+            if os.path.exists(file_path):
+                df_country_year = pd.read_csv(file_path)
+                df_country_year["country"] = country.upper()
+                dfs.append(df_country_year)
 
     if not dfs:
         return px.line(title="⚠️ No data found for selection.")
@@ -122,7 +100,7 @@ def update_graph(granularity, app_type, country, selected_years):
     df = pd.concat(dfs, ignore_index=True)
     df["date"] = pd.to_datetime(df["date"])
     df["month"] = df["month"].astype(str)
-    df = df[df["app_type"] == app_type]
+    df = df[df["app_type"] == "Free"]
     df = df[df["classification"] != "Unknown"]
 
     if granularity == "daily":
@@ -130,20 +108,23 @@ def update_graph(granularity, app_type, country, selected_years):
     else:
         df["time"] = pd.to_datetime(df["month"])
 
-    group_cols = ["time", "classification"]
+    group_cols = ["time", "country", "classification"]
     agg = df.groupby(group_cols)["score_borda"].sum().reset_index()
-    agg["relative_score"] = agg.groupby("time")["score_borda"].transform(lambda x: x / x.sum()) * 100
+    agg["relative_score"] = agg.groupby(["time", "country"])["score_borda"].transform(lambda x: x / x.sum()) * 100
 
     fig = px.line(
         agg,
         x="time",
         y="relative_score",
-        color="classification",
+        color="country",
+        facet_col="classification",
+        facet_col_wrap=3,
         labels={"relative_score": "Relative Borda Share (%)", "time": granularity.capitalize()},
-        title=f"Category Share of Borda Scores ({granularity.capitalize()})"
+        title=f"Country Comparison of Category Share ({granularity.capitalize()}, Free Apps)"
     )
 
-    fig.update_layout(height=600, legend_title="Category")
+    fig.for_each_annotation(lambda a: a.update(text=a.text.split("=")[-1]))
+    fig.update_layout(height=800, legend_title="Country")
     fig.update_yaxes(ticksuffix="%")
     return fig
 

@@ -43,16 +43,6 @@ layout = dbc.Container([
 
     dbc.Row([
         dbc.Col([
-            html.Label("App Type"),
-            dcc.Dropdown(
-                id="app-type-dropdown",
-                options=[{"label": t, "value": t} for t in sorted(all_df['app_type'].dropna().unique())],
-                value="Free",
-                clearable=False
-            )
-        ], width=2),
-
-        dbc.Col([
             html.Label("Aggregation Methods"),
             dcc.Dropdown(
                 id="method-dropdown",
@@ -90,17 +80,16 @@ layout = dbc.Container([
 # === Callback ===
 @callback(
     Output("trend-graphx", "figure"),
-    Input("app-type-dropdown", "value"),
     Input("method-dropdown", "value"),
     Input("year-dropdown", "value"),
     Input("category-dropdown", "value")
 )
-def update_graph(app_type, methods, selected_years, category):
+def update_graph(methods, selected_years, category):
     if not selected_years or not methods:
         return px.line(title="⚠️ Please select year(s) and method(s).")
 
     filtered = all_df[
-        (all_df["app_type"] == app_type) &
+        (all_df["app_type"] == "Free") &
         (all_df["classification"] == category) &
         (all_df["method"].isin(methods)) &
         (all_df["month"].dt.year.isin(selected_years))
@@ -115,7 +104,7 @@ def update_graph(app_type, methods, selected_years, category):
         y="relative_score",
         color="method",
         markers=True,
-        title=f"{category} – {app_type} Apps – Aggregation Method Comparison",
+        title=f"{category} – Free Apps – Aggregation Method Comparison",
         labels={"month": "Month", "relative_score": "Relative Share (%)"}
     )
     fig.update_layout(height=600, legend_title="Aggregation Method")
