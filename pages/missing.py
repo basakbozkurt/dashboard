@@ -27,7 +27,7 @@ layout = dbc.Container([
 
     dbc.Row([
         dbc.Col([
-            html.Label("Select Year(s):", className="small"),
+            html.Label("Year(s):", className="small"),
             dcc.Dropdown(
                 options=[{"label": str(y), "value": y} for y in sorted(df["year"].unique())],
                 value=[df["year"].max()],
@@ -35,10 +35,10 @@ layout = dbc.Container([
                 id="year-dropdown",
                 style={"fontSize": "13px"}
             )
-        ], width=6),
+        ], width=3),
 
         dbc.Col([
-            html.Label("Select Country(ies):", className="small"),
+            html.Label("Country(ies):", className="small"),
             dcc.Dropdown(
                 options=[{"label": c.upper(), "value": c} for c in sorted(df["country"].unique())],
                 value=[df["country"].unique()[0]],
@@ -46,7 +46,7 @@ layout = dbc.Container([
                 id="country-dropdown",
                 style={"fontSize": "13px"}
             )
-        ], width=6)
+        ], width=3)
     ], className="mb-3"),
             html.P(
             "Missingness is not random. It is concentrated in lower ranks among free apps. This pattern may introduce bias into category-level trends, so results should be interpreted with caution.",

@@ -27,7 +27,7 @@ layout = dbc.Container([
 
     dbc.Row([
         dbc.Col([
-            html.Label("Select Granularity"),
+            html.Label("Granularity"),
             dcc.Dropdown(
                 id="granularity-dropdown",
                 options=[
@@ -37,10 +37,10 @@ layout = dbc.Container([
                 value="monthly",
                 clearable=False
             )
-        ], width=3),
+        ], width=2),
 
         dbc.Col([
-            html.Label("Select Country(ies)"),
+            html.Label("Country(ies)"),
             dcc.Dropdown(
                 id="country-dropdown",
                 options=[{"label": c.upper(), "value": c} for c in all_countries],
@@ -48,10 +48,10 @@ layout = dbc.Container([
                 multi=True,
                 clearable=False
             )
-        ], width=3),
+        ], width=2),
 
         dbc.Col([
-            html.Label("Select Year"),
+            html.Label("Year"),
             dcc.Dropdown(
                 id="year-dropdown",
                 options=[{"label": str(y), "value": y} for y in all_years],
@@ -59,7 +59,7 @@ layout = dbc.Container([
                 multi=False,
                 clearable=False
             )
-        ], width=6),
+        ], width=2),
     ], className="mb-4"),
         html.P(
         "This line chart visualizes the temporal distribution of normalised Borda scores across educational app categories. For each country and time point, category-level Borda scores are computed from national app rankings.",

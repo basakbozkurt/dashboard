@@ -32,7 +32,7 @@ layout = dbc.Container([
 
     dbc.Row([
         dbc.Col([
-            html.Label("Select Granularity"),
+            html.Label("Granularity"),
             dcc.Dropdown(
                 id="granularity-dropdown",
                 options=[
@@ -42,17 +42,17 @@ layout = dbc.Container([
                 value="monthly",
                 clearable=False
             )
-        ], width=4),
+        ], width=2),
 
         dbc.Col([
-            html.Label("Select Year(s)"),
+            html.Label("Year(s)"),
             dcc.Dropdown(
                 id="year-dropdown",
                 options=[{"label": str(y), "value": y} for y in sorted(daily_df['year'].unique())],
                 value=[2022],
                 multi=True
             )
-        ], width=8),
+        ], width=2),
     ], className="mb-4"),
             html.P(
                 "This chart visualizes the global distribution of educational app categories over time,"

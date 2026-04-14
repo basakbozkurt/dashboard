@@ -43,7 +43,7 @@ layout = dbc.Container([
 
     dbc.Row([
         dbc.Col([
-            html.Label("Aggregation Methods"),
+            html.Label("Methods"),
             dcc.Dropdown(
                 id="method-dropdown",
                 options=[{"label": m, "value": m} for m in ["Borda", "Mean", "Median"]],
@@ -51,17 +51,17 @@ layout = dbc.Container([
                 multi=True,
                 clearable=False
             )
-        ], width=3),
+        ], width=2),
 
         dbc.Col([
-            html.Label("Select Year(s)"),
+            html.Label("Year(s)"),
             dcc.Dropdown(
                 id="year-dropdown",
                 options=[{"label": str(y), "value": y} for y in sorted(all_df["month"].dt.year.unique())],
                 value=[2022],
                 multi=True
             )
-        ], width=3),
+        ], width=2),
 
         dbc.Col([
             html.Label("Category"),
@@ -71,7 +71,7 @@ layout = dbc.Container([
                 value="Education",
                 clearable=False
             )
-        ], width=4),
+        ], width=2),
     ], className="mb-4"),
 
     dcc.Graph(id="trend-graphx")

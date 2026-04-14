@@ -41,7 +41,7 @@ layout = dbc.Container([
                 value="monthly",
                 clearable=False
             )
-        ], width=4),
+        ], width=2),
 
         dbc.Col([
             html.Label("Year(s)"),
@@ -51,7 +51,7 @@ layout = dbc.Container([
                 value=[2022],
                 multi=True
             )
-        ], width=8),
+        ], width=2),
     ], className="mb-4"),
             html.P(
             "This stacked bar chart visualizes the relative distribution of educational app categories over time, using normalized Borda scores aggregated across countries. Each bar represents a time unit (day or month), with segments showing the relative prominence of each category.",
