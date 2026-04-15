@@ -118,10 +118,10 @@ def update_graph(granularity, selected_countries, selected_years):
         df["time"] = pd.to_datetime(df["month"])
         df["x_label"] = df["time"].dt.strftime("%b %Y")
 
-    group_cols = ["time", "country", "classification"] if granularity == "daily" else ["year", "x_label", "country", "classification"]
+    group_cols = ["year", "time", "country", "classification"] if granularity == "daily" else ["year", "x_label", "country", "classification"]
     agg = df.groupby(group_cols)["score_borda"].sum().reset_index()
     if granularity == "daily":
-        agg["relative_score"] = agg.groupby(["time", "country"])["score_borda"].transform(lambda x: x / x.sum()) * 100
+        agg["relative_score"] = agg.groupby(["year", "time", "country"])["score_borda"].transform(lambda x: x / x.sum()) * 100
         x_column = "time"
         month_order = None
     else:
@@ -144,6 +144,7 @@ def update_graph(granularity, selected_countries, selected_years):
 
     fig.for_each_annotation(lambda a: a.update(text=a.text.split("=")[-1]))
     fig.update_layout(height=800, legend_title="Country")
+    fig.update_traces(connectgaps=False)
     
     if granularity == "daily":
         fig.update_xaxes(title_text="Daily", tickformat="%Y-%m-%d", nticks=10)
