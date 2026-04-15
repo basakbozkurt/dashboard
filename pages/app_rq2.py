@@ -51,12 +51,12 @@ layout = dbc.Container([
         ], width=2),
 
         dbc.Col([
-            html.Label("Year"),
+            html.Label("Year(s)"),
             dcc.Dropdown(
                 id="year-dropdown",
                 options=[{"label": str(y), "value": y} for y in all_years],
-                value=all_years[-1],
-                multi=False,
+                value=[all_years[-1]],
+                multi=True,
                 clearable=False
             )
         ], width=2),
@@ -92,6 +92,7 @@ def update_graph(granularity, selected_countries, selected_years):
             if os.path.exists(file_path):
                 df_country_year = pd.read_csv(file_path)
                 df_country_year["country"] = country.upper()
+                df_country_year["year"] = year
                 dfs.append(df_country_year)
 
     if not dfs:
@@ -106,17 +107,19 @@ def update_graph(granularity, selected_countries, selected_years):
     if granularity == "daily":
         df["time"] = df["date"]
     else:
+        # For monthly, use the month column which is already in YYYY-MM format
         df["time"] = pd.to_datetime(df["month"])
 
-    group_cols = ["time", "country", "classification"]
+    group_cols = ["time", "year", "country", "classification"]
     agg = df.groupby(group_cols)["score_borda"].sum().reset_index()
-    agg["relative_score"] = agg.groupby(["time", "country"])["score_borda"].transform(lambda x: x / x.sum()) * 100
+    agg["relative_score"] = agg.groupby(["time", "year", "country"])["score_borda"].transform(lambda x: x / x.sum()) * 100
+    agg["country_year"] = agg["country"] + " " + agg["year"].astype(str)
 
     fig = px.line(
         agg,
         x="time",
         y="relative_score",
-        color="country",
+        color="country_year",
         facet_col="classification",
         facet_col_wrap=3,
         labels={"relative_score": "Relative Borda Share (%)", "time": granularity.capitalize()},
@@ -124,7 +127,17 @@ def update_graph(granularity, selected_countries, selected_years):
     )
 
     fig.for_each_annotation(lambda a: a.update(text=a.text.split("=")[-1]))
-    fig.update_layout(height=800, legend_title="Country")
+    fig.update_layout(height=800, legend_title="Country-Year")
+    
+    if granularity == "daily":
+        fig.update_xaxes(title_text="Daily", tickformat="%Y-%m-%d", nticks=10)
+        hovertemplate = "<b>%{customdata[0]} - %{x|%Y-%m-%d}</b><br>Borda Share: %{y:.1f}%<extra></extra>"
+    else:
+        fig.update_xaxes(title_text="Monthly", tickformat="%m/%y", nticks=12, tickangle=45)
+        hovertemplate = "<b>%{customdata[0]} - %{x|%b %Y}</b><br>Borda Share: %{y:.1f}%<extra></extra>"
+    
+    fig.update_traces(customdata=agg[["country_year"]])
+    fig.update_traces(hovertemplate=hovertemplate)
     fig.update_yaxes(ticksuffix="%")
     return fig
 
