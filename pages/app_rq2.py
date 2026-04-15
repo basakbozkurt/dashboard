@@ -118,14 +118,14 @@ def update_graph(granularity, selected_countries, selected_years):
         df["time"] = pd.to_datetime(df["month"])
         df["x_label"] = df["time"].dt.strftime("%b %Y")
 
-    group_cols = ["time", "country", "classification"] if granularity == "daily" else ["x_label", "country", "classification"]
+    group_cols = ["time", "country", "classification"] if granularity == "daily" else ["year", "x_label", "country", "classification"]
     agg = df.groupby(group_cols)["score_borda"].sum().reset_index()
     if granularity == "daily":
         agg["relative_score"] = agg.groupby(["time", "country"])["score_borda"].transform(lambda x: x / x.sum()) * 100
         x_column = "time"
         month_order = None
     else:
-        agg["relative_score"] = agg.groupby(["x_label", "country"])["score_borda"].transform(lambda x: x / x.sum()) * 100
+        agg["relative_score"] = agg.groupby(["year", "x_label", "country"])["score_borda"].transform(lambda x: x / x.sum()) * 100
         x_column = "x_label"
         month_order = df.sort_values("time")["x_label"].drop_duplicates().tolist()
     fig = px.line(
@@ -133,6 +133,7 @@ def update_graph(granularity, selected_countries, selected_years):
         x=x_column,
         y="relative_score",
         color="country",
+        line_group="year" if granularity == "monthly" else None,
         facet_col="classification",
         facet_col_wrap=3,
         category_orders={"country": COUNTRY_ORDER},
