@@ -131,13 +131,9 @@ def update_graph(granularity, selected_countries, selected_years):
     
     if granularity == "daily":
         fig.update_xaxes(title_text="Daily", tickformat="%Y-%m-%d", nticks=10)
-        hovertemplate = "<b>%{customdata[0]} - %{x|%Y-%m-%d}</b><br>Borda Share: %{y:.1f}%<extra></extra>"
     else:
         fig.update_xaxes(title_text="Monthly", tickformat="%m/%y", nticks=12, tickangle=45)
-        hovertemplate = "<b>%{customdata[0]} - %{x|%b %Y}</b><br>Borda Share: %{y:.1f}%<extra></extra>"
     
-    fig.update_traces(customdata=agg[["country_year"]])
-    fig.update_traces(hovertemplate=hovertemplate)
     fig.update_yaxes(ticksuffix="%")
     return fig
 
