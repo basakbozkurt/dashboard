@@ -17,6 +17,14 @@ def get_available_files():
 
 all_countries, all_years = get_available_files()
 
+# Keep country colors stable across filters/years.
+COLOR_SEQUENCE = px.colors.qualitative.Set3 + px.colors.qualitative.Plotly
+COUNTRY_ORDER = [c.upper() for c in all_countries]
+COUNTRY_COLOR_MAP = {
+    country: COLOR_SEQUENCE[i % len(COLOR_SEQUENCE)]
+    for i, country in enumerate(COUNTRY_ORDER)
+}
+
 # === Initialize App ===
 dash.register_page(__name__, path="/rq2",
                    name="RQ2: App Category Trends Based on Country-Level Rankings", order=2)
@@ -118,8 +126,12 @@ def update_graph(granularity, selected_countries, selected_years):
         x="time",
         y="relative_score",
         color="country",
+        line_group="year",
+        line_dash="year",
         facet_col="classification",
         facet_col_wrap=3,
+        category_orders={"country": COUNTRY_ORDER},
+        color_discrete_map=COUNTRY_COLOR_MAP,
         labels={"relative_score": "Relative Borda Share (%)", "time": granularity.capitalize()},
         title=f"Country Comparison of Category Share ({granularity.capitalize()}, Free Apps)"
     )
