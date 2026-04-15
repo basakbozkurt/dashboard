@@ -115,15 +115,22 @@ def update_graph(granularity, selected_countries, selected_years):
     if granularity == "daily":
         df["time"] = df["date"]
     else:
-        # For monthly, use the month column which is already in YYYY-MM format
         df["time"] = pd.to_datetime(df["month"])
+        df["x_label"] = df["time"].dt.strftime("%b %Y")
 
-    group_cols = ["time", "country", "classification"]
+    group_cols = ["time", "country", "classification"] if granularity == "daily" else ["x_label", "country", "classification"]
     agg = df.groupby(group_cols)["score_borda"].sum().reset_index()
-    agg["relative_score"] = agg.groupby(["time", "country"])["score_borda"].transform(lambda x: x / x.sum()) * 100
+    if granularity == "daily":
+        agg["relative_score"] = agg.groupby(["time", "country"])["score_borda"].transform(lambda x: x / x.sum()) * 100
+        x_column = "time"
+        month_order = None
+    else:
+        agg["relative_score"] = agg.groupby(["x_label", "country"])["score_borda"].transform(lambda x: x / x.sum()) * 100
+        x_column = "x_label"
+        month_order = df.sort_values("time")["x_label"].drop_duplicates().tolist()
     fig = px.line(
         agg,
-        x="time",
+        x=x_column,
         y="relative_score",
         color="country",
         facet_col="classification",
@@ -140,7 +147,7 @@ def update_graph(granularity, selected_countries, selected_years):
     if granularity == "daily":
         fig.update_xaxes(title_text="Daily", tickformat="%Y-%m-%d", nticks=10)
     else:
-        fig.update_xaxes(title_text="Monthly", tickformat="%m/%y", nticks=12, tickangle=45)
+        fig.update_xaxes(title_text="Monthly", type="category", categoryorder="array", categoryarray=month_order, tickangle=45)
     
     fig.update_yaxes(ticksuffix="%")
     return fig
