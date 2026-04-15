@@ -129,24 +129,12 @@ def update_graph(granularity, selected_countries, selected_years):
         x_column = "x_label"
         month_order = df.sort_values("time")["x_label"].drop_duplicates().tolist()
 
-    if len(selected_years) > 1:
-        gap_rows = []
-        for (_, _classification), group in agg.groupby(["country", "classification"], sort=False):
-            group = group.sort_values(["year", x_column])
-            years = list(group["year"].drop_duplicates())
-            for index, year in enumerate(years[:-1]):
-                year_group = group[group["year"] == year]
-                gap_row = year_group.iloc[-1:].copy()
-                gap_row["relative_score"] = None
-                gap_rows.append(gap_row)
-        if gap_rows:
-            agg = pd.concat([agg] + gap_rows, ignore_index=True)
-            agg = agg.sort_values(["country", "classification", "year", x_column], kind="stable")
     fig = px.line(
         agg,
         x=x_column,
         y="relative_score",
         color="country",
+        line_group="year",
         facet_col="classification",
         facet_col_wrap=3,
         category_orders={"country": COUNTRY_ORDER},
