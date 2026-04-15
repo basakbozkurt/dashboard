@@ -133,7 +133,7 @@ def update_graph(granularity, selected_countries, selected_years):
         x=x_column,
         y="relative_score",
         color="country",
-        line_group="year" if granularity == "monthly" else None,
+        line_group="year",
         facet_col="classification",
         facet_col_wrap=3,
         category_orders={"country": COUNTRY_ORDER},
