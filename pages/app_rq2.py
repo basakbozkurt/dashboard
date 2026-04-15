@@ -113,13 +113,11 @@ def update_graph(granularity, selected_countries, selected_years):
     group_cols = ["time", "year", "country", "classification"]
     agg = df.groupby(group_cols)["score_borda"].sum().reset_index()
     agg["relative_score"] = agg.groupby(["time", "year", "country"])["score_borda"].transform(lambda x: x / x.sum()) * 100
-    agg["country_year"] = agg["country"] + " " + agg["year"].astype(str)
-
     fig = px.line(
         agg,
         x="time",
         y="relative_score",
-        color="country_year",
+        color="country",
         facet_col="classification",
         facet_col_wrap=3,
         labels={"relative_score": "Relative Borda Share (%)", "time": granularity.capitalize()},
@@ -127,7 +125,7 @@ def update_graph(granularity, selected_countries, selected_years):
     )
 
     fig.for_each_annotation(lambda a: a.update(text=a.text.split("=")[-1]))
-    fig.update_layout(height=800, legend_title="Country-Year")
+    fig.update_layout(height=800, legend_title="Country")
     
     if granularity == "daily":
         fig.update_xaxes(title_text="Daily", tickformat="%Y-%m-%d", nticks=10)
