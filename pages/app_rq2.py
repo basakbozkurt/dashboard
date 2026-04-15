@@ -118,16 +118,14 @@ def update_graph(granularity, selected_countries, selected_years):
         # For monthly, use the month column which is already in YYYY-MM format
         df["time"] = pd.to_datetime(df["month"])
 
-    group_cols = ["time", "year", "country", "classification"]
+    group_cols = ["time", "country", "classification"]
     agg = df.groupby(group_cols)["score_borda"].sum().reset_index()
-    agg["relative_score"] = agg.groupby(["time", "year", "country"])["score_borda"].transform(lambda x: x / x.sum()) * 100
+    agg["relative_score"] = agg.groupby(["time", "country"])["score_borda"].transform(lambda x: x / x.sum()) * 100
     fig = px.line(
         agg,
         x="time",
         y="relative_score",
         color="country",
-        line_group="year",
-        line_dash="year",
         facet_col="classification",
         facet_col_wrap=3,
         category_orders={"country": COUNTRY_ORDER},
