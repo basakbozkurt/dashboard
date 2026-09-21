@@ -1,0 +1,1081 @@
+country,classification,app_id,score_borda,rank,country_name
+BE,Cognitive Development,air.nn.mobile.app.main,305483,1,Belgium
+BE,Cognitive Development,com.brainbow.peak.app,280968,2,Belgium
+BE,Cognitive Development,com.lumoslabs.lumosity,116344,3,Belgium
+BE,Cognitive Development,com.wonder,109147,4,Belgium
+BE,Cognitive Development,org.aztest.iqtest,56635,5,Belgium
+BE,Cognitive Development,com.memory.brain.training.games,28582,6,Belgium
+BE,Cognitive Development,fr.lemonde.memorable,11896,7,Belgium
+BE,Cognitive Development,az.ivytech.jigsawPuzzle,11574,8,Belgium
+BE,Cognitive Development,com.memorado.brain.games,10577,9,Belgium
+BE,Cognitive Development,com.Store.ReaderPro,4392,10,Belgium
+BE,Education Management,com.classdojo.android,402874,1,Belgium
+BE,Education Management,daldev.android.gradehelper,299902,2,Belgium
+BE,Education Management,co.roomapp.klassroom,156130,3,Belgium
+BE,Education Management,com.questi.qvo,144011,4,Belgium
+BE,Education Management,com.diy.school,89558,5,Belgium
+BE,Education Management,be.ac.ulb.monulb,74356,6,Belgium
+BE,Education Management,be.schoolware.appschoolware,63424,7,Belgium
+BE,Education Management,com.grupet.web.app,52832,8,Belgium
+BE,Education Management,com.plickers.client.android,40824,9,Belgium
+BE,Education Management,com.diedm.tma_public,27536,10,Belgium
+BE,Licensing Exam,ch.swift.itheoriebe.free,403454,1,Belgium
+BE,Licensing Exam,com.pineapplestudio.codedelaroutebelge,379282,2,Belgium
+BE,Licensing Exam,air.com.permisecole.peandrophone,374321,3,Belgium
+BE,Licensing Exam,be.permisb.permisfree,337022,4,Belgium
+BE,Licensing Exam,com.test.theory.belgiquepermis,221741,5,Belgium
+BE,Licensing Exam,com.iwantdrive.beversion,179775,6,Belgium
+BE,Licensing Exam,com.feuvert.permis,147960,7,Belgium
+BE,Licensing Exam,com.pineapplestudio.testperceptionrisquesbelgique,105269,8,Belgium
+BE,Licensing Exam,com.kreactive.digischool.codedelaroute,99140,9,Belgium
+BE,Licensing Exam,com.Zimbombah.CodeDeLaRoute,94487,10,Belgium
+BE,Non-Education,org.plantnet,472733,1,Belgium
+BE,Non-Education,be.smartschool.mobile,442127,2,Belgium
+BE,Non-Education,cn.danatech.xingseus,384277,3,Belgium
+BE,Non-Education,com.vitotechnology.StarWalk2Free,377759,4,Belgium
+BE,Non-Education,com.tocaboca.tocakitchen,343787,5,Belgium
+BE,Non-Education,com.t11.skyviewfree,329027,6,Belgium
+BE,Non-Education,com.bible.kids,323866,7,Belgium
+BE,Non-Education,com.nicedayapps.iss_free,312823,8,Belgium
+BE,Non-Education,com.drpanda.town.street,269002,9,Belgium
+BE,Non-Education,com.miga.world,260448,10,Belgium
+BE,Parents,com.concapps.basisschoolinapp,46238,1,Belgium
+BE,Parents,be.babyboom.mybabyboomapp,34652,2,Belgium
+BE,Parents,com.zippslip,21751,3,Belgium
+BE,Parents,tinytap.kids.learning.games,19884,4,Belgium
+BE,Parents,com.masociete.quickSuite,19509,5,Belgium
+BE,Parents,com.dsjn.s2p2,17481,6,Belgium
+BE,Parents,com.kinedu.appkinedu,12042,7,Belgium
+BE,Parents,nl.web2work.schoolapp2,11281,8,Belgium
+BE,Parents,es.kidsandus.mykids,6844,9,Belgium
+BE,Parents,be.broekx.app,2224,10,Belgium
+BE,Preschool,com.fantazm.bobospelen,267269,1,Belgium
+BE,Preschool,com.playtoddlers.sweethomestories.free,227866,2,Belgium
+BE,Preschool,com.playtoddlers.happydaycarestories.free,177240,3,Belgium
+BE,Preschool,com.juniorpear.animal_sound,176898,4,Belgium
+BE,Preschool,kr.co.smartstudy.babyshark_android_googlemarket,176717,5,Belgium
+BE,Preschool,com.forqan.tech.Jobs,172097,6,Belgium
+BE,Preschool,com.applicaster.babytv.vod,153605,7,Belgium
+BE,Preschool,com.lescapadou.cursivefree,151197,8,Belgium
+BE,Preschool,carrioncastillo.puntos.animales,139610,9,Belgium
+BE,Preschool,com.sagosago.World.googleplay,131874,10,Belgium
+BE,Professional & Career,com.linkedin.android.learning,157424,1,Belgium
+BE,Professional & Career,hacking.learnhacking.learn.hack.ethicalhacking.programming.coding.hackerx.cybersecurity,41517,2,Belgium
+BE,Professional & Career,org.coursera.android,38974,3,Belgium
+BE,Professional & Career,com.englishscore,15831,4,Belgium
+BE,Professional & Career,com.vistalizer.vfe30US,7709,5,Belgium
+BE,Professional & Career,scan.factor,4941,6,Belgium
+BE,Professional & Career,com.csod.learning,4627,7,Belgium
+BE,Professional & Career,com.dazzinails.app,1794,8,Belgium
+BE,Professional & Career,com.xaurum.pe,1584,9,Belgium
+BE,Professional & Career,com.intuition.hle,1293,10,Belgium
+BE,Subject Learning,com.duolingo,504017,1,Belgium
+BE,Subject Learning,com.babbel.mobile.android.en,478253,2,Belgium
+BE,Subject Learning,com.microblink.photomath,467661,3,Belgium
+BE,Subject Learning,com.atistudios.mondly.languages,461488,4,Belgium
+BE,Subject Learning,com.memrise.android.memrisecompanion,410391,5,Belgium
+BE,Subject Learning,com.yousician.yousician,386227,6,Belgium
+BE,Subject Learning,com.busuu.android.enc,377616,7,Belgium
+BE,Subject Learning,com.atistudios.italk.nl,357368,8,Belgium
+BE,Subject Learning,com.funeasylearn.dutch,355715,9,Belgium
+BE,Subject Learning,com.gonliapps.learnfrenchfree.game,292734,10,Belgium
+BE,Teaching and Learning,no.mobitroll.kahoot.android,483447,1,Belgium
+BE,Teaching and Learning,com.quizlet.quizletandroid,446983,2,Belgium
+BE,Teaching and Learning,com.google.android.apps.classroom,367783,3,Belgium
+BE,Teaching and Learning,com.moodle.moodlemobile,278302,4,Belgium
+BE,Teaching and Learning,es.monkimun.lingokids,273260,5,Belgium
+BE,Teaching and Learning,com.udemy.android,247557,6,Belgium
+BE,Teaching and Learning,org.khanacademy.android,211393,7,Belgium
+BE,Teaching and Learning,com.instructure.candroid,175771,8,Belgium
+BE,Teaching and Learning,com.vidku.app.flipgrid,151447,9,Belgium
+BE,Teaching and Learning,com.socrative.student,141883,10,Belgium
+CH,Cognitive Development,air.nn.mobile.app.main,454403,1,Switzerland
+CH,Cognitive Development,com.brainbow.peak.app,273482,2,Switzerland
+CH,Cognitive Development,com.lumoslabs.lumosity,244635,3,Switzerland
+CH,Cognitive Development,org.aztest.iqtest,107789,4,Switzerland
+CH,Cognitive Development,com.wonder,87400,5,Switzerland
+CH,Cognitive Development,com.memory.brain.training.games,32489,6,Switzerland
+CH,Cognitive Development,com.Store.ReaderPro,16907,7,Switzerland
+CH,Cognitive Development,com.memorado.brain.games,13503,8,Switzerland
+CH,Cognitive Development,com.speedreading.alexander.speedreading,8201,9,Switzerland
+CH,Cognitive Development,alex.education.a_brain,2205,10,Switzerland
+CH,Education Management,daldev.android.gradehelper,241167,1,Switzerland
+CH,Education Management,com.grupet.web.app,206791,2,Switzerland
+CH,Education Management,org.learningview,111906,3,Switzerland
+CH,Education Management,com.IndexEducation.Pronote,88206,4,Switzerland
+CH,Education Management,com.noten.johannes.sunisup,65985,5,Switzerland
+CH,Education Management,com.foxeducation.school,55812,6,Switzerland
+CH,Education Management,ch.fidelisfactory.pluspoints,52977,7,Switzerland
+CH,Education Management,ch.ethz.eduapp,41451,8,Switzerland
+CH,Education Management,com.classdojo.android,39415,9,Switzerland
+CH,Education Management,de.thefrogger.timetable,31071,10,Switzerland
+CH,Licensing Exam,com.schurtertom.autotheorie,454071,1,Switzerland
+CH,Licensing Exam,ch.swift.itheorie.asa.code,339724,2,Switzerland
+CH,Licensing Exam,com.theorie24.app,228825,3,Switzerland
+CH,Licensing Exam,ch.fahrlehrer24.signal,189616,4,Switzerland
+CH,Licensing Exam,ch.blink.theory,173690,5,Switzerland
+CH,Licensing Exam,ch.swift.itheorie.astag.lkw.code,120039,6,Switzerland
+CH,Licensing Exam,ch.binnenschein.www,75059,7,Switzerland
+CH,Licensing Exam,com.apps4you2go.learning_car,50811,8,Switzerland
+CH,Licensing Exam,air.ch.easydriver.app,39144,9,Switzerland
+CH,Licensing Exam,com.iwantdrive.swversion,36498,10,Switzerland
+CH,Non-Education,org.plantnet,463982,1,Switzerland
+CH,Non-Education,com.vitotechnology.StarWalk2Free,439049,2,Switzerland
+CH,Non-Education,com.blinkslabs.blinkist.android,423576,3,Switzerland
+CH,Non-Education,ch.admin.babs.alertswiss,385036,4,Switzerland
+CH,Non-Education,cn.danatech.xingseus,379505,5,Switzerland
+CH,Non-Education,com.nicedayapps.iss_free,363609,6,Switzerland
+CH,Non-Education,com.t11.skyviewfree,359061,7,Switzerland
+CH,Non-Education,com.tocaboca.tocakitchen,273913,8,Switzerland
+CH,Non-Education,ch.bk.voteinfo,270250,9,Switzerland
+CH,Non-Education,com.floraincognita.app.floraincognita,265994,10,Switzerland
+CH,Parents,mobi.klapp.parent,106480,1,Switzerland
+CH,Parents,com.kaspersky.safekids,17881,2,Switzerland
+CH,Parents,org.pocketcampus.pcscolaris,16599,3,Switzerland
+CH,Parents,com.kinedu.appkinedu,12779,4,Switzerland
+CH,Parents,tinytap.kids.learning.games,5780,5,Switzerland
+CH,Parents,com.meb.vbsmobil,4295,6,Switzerland
+CH,Parents,com.school_app.waedenswil,3600,7,Switzerland
+CH,Parents,com.institutocamoes.epedigital,3087,8,Switzerland
+CH,Parents,com.school_app.bassersdorf,2490,9,Switzerland
+CH,Parents,com.remind101,2404,10,Switzerland
+CH,Preschool,forqan.tech.babypuzzles_edu.ads,235880,1,Switzerland
+CH,Preschool,com.edokicademy.montessoriacademy,176914,2,Switzerland
+CH,Preschool,com.forqan.tech.Jobs,156157,3,Switzerland
+CH,Preschool,com.juniorpear.animal_sound,134044,4,Switzerland
+CH,Preschool,com.playtoddlers.sweethomestories.free,119018,5,Switzerland
+CH,Preschool,com.sagosago.World.googleplay,114438,6,Switzerland
+CH,Preschool,ai.mybuddy.talkingflashcards_new,111909,7,Switzerland
+CH,Preschool,carrioncastillo.puntos.animales,102425,8,Switzerland
+CH,Preschool,kr.co.smartstudy.babyshark_android_googlemarket,88644,9,Switzerland
+CH,Preschool,al.trigonom.zahlenschreiben,84952,10,Switzerland
+CH,Professional & Career,com.linkedin.android.learning,286786,1,Switzerland
+CH,Professional & Career,org.coursera.android,195801,2,Switzerland
+CH,Professional & Career,hacking.learnhacking.learn.hack.ethicalhacking.programming.coding.hackerx.cybersecurity,41416,3,Switzerland
+CH,Professional & Career,ch.ivaris.pkorg,8804,4,Switzerland
+CH,Professional & Career,ch.vnv.capacite,4099,5,Switzerland
+CH,Professional & Career,com.csod.learning,2679,6,Switzerland
+CH,Professional & Career,app.proxflexx.com,2477,7,Switzerland
+CH,Professional & Career,com.intuition.hle,2077,8,Switzerland
+CH,Professional & Career,com.careerfairplus.cf_plus,2004,9,Switzerland
+CH,Professional & Career,digitalmarketing.digital.marketing.dm.ads.learn.socialmedia.onlinemarketing,1944,10,Switzerland
+CH,Subject Learning,com.duolingo,503451,1,Switzerland
+CH,Subject Learning,com.babbel.mobile.android.en,499721,2,Switzerland
+CH,Subject Learning,com.microblink.photomath,464879,3,Switzerland
+CH,Subject Learning,com.busuu.android.enc,440784,4,Switzerland
+CH,Subject Learning,com.atistudios.mondly.languages,435571,5,Switzerland
+CH,Subject Learning,com.yousician.yousician,429485,6,Switzerland
+CH,Subject Learning,com.memrise.android.memrisecompanion,401832,7,Switzerland
+CH,Subject Learning,com.ichi2.anki,365303,8,Switzerland
+CH,Subject Learning,com.lubosmikusiak.articuli.derdiedas,364660,9,Switzerland
+CH,Subject Learning,net.tandem,310759,10,Switzerland
+CH,Teaching and Learning,no.mobitroll.kahoot.android,489118,1,Switzerland
+CH,Teaching and Learning,com.quizlet.quizletandroid,483006,2,Switzerland
+CH,Teaching and Learning,com.solocode.anton,371853,3,Switzerland
+CH,Teaching and Learning,com.moodle.moodlemobile,370375,4,Switzerland
+CH,Teaching and Learning,com.udemy.android,321640,5,Switzerland
+CH,Teaching and Learning,ch.openconcept.c2b,306880,6,Switzerland
+CH,Teaching and Learning,com.simpleclub.android,294907,7,Switzerland
+CH,Teaching and Learning,de.klett.klettaugmented,285496,8,Switzerland
+CH,Teaching and Learning,es.monkimun.lingokids,266612,9,Switzerland
+CH,Teaching and Learning,com.studysmarter,265483,10,Switzerland
+DE,Cognitive Development,air.nn.mobile.app.main,454010,1,Germany
+DE,Cognitive Development,com.brainbow.peak.app,235425,2,Germany
+DE,Cognitive Development,org.aztest.iqtest,99725,3,Germany
+DE,Cognitive Development,com.wonder,39373,4,Germany
+DE,Cognitive Development,com.memory.brain.training.games,29692,5,Germany
+DE,Cognitive Development,com.lumoslabs.lumosity,21282,6,Germany
+DE,Cognitive Development,com.Store.ReaderPro,6182,7,Germany
+DE,Cognitive Development,com.speedreading.alexander.speedreading,4708,8,Germany
+DE,Cognitive Development,com.memorado.brain.games,2854,9,Germany
+DE,Cognitive Development,com.pomodoro.studytimer.studytimer,1459,10,Germany
+DE,Education Management,com.grupet.web.app,465881,1,Germany
+DE,Education Management,de.scoolio.app,305359,2,Germany
+DE,Education Management,de.heinekingmedia.schulcloud,226477,3,Germany
+DE,Education Management,com.sdui.sdui,201292,4,Germany
+DE,Education Management,de.thefrogger.timetable,201153,5,Germany
+DE,Education Management,daldev.android.gradehelper,169937,6,Germany
+DE,Education Management,de.mocama.UniNow,151583,7,Germany
+DE,Education Management,online.stoehr.blackboard,118965,8,Germany
+DE,Education Management,com.foxeducation.school,105703,9,Germany
+DE,Education Management,air.org.edupage,103485,10,Germany
+DE,Licensing Exam,air.de.fahren_lernen.app,471564,1,Germany
+DE,Licensing Exam,de.theorie24.fs.mofa,457115,2,Germany
+DE,Licensing Exam,de.deutscherfahrschulverlag.fsc,385915,3,Germany
+DE,Licensing Exam,de.degener.clicklearn.forms,378550,4,Germany
+DE,Licensing Exam,com.vialsoft.ifahrschultheoriefree,359972,5,Germany
+DE,Licensing Exam,de.evm.driverscampraxis,357263,6,Germany
+DE,Licensing Exam,de.adac.Fuehrerschein,344310,7,Germany
+DE,Licensing Exam,com.adalbero.app.lebenindeutchland,283902,8,Germany
+DE,Licensing Exam,air.de.wendel.fahrapp,259575,9,Germany
+DE,Licensing Exam,ch.swift.itheoriede.auto.free,222675,10,Germany
+DE,Non-Education,org.plantnet,433963,1,Germany
+DE,Non-Education,com.vitotechnology.StarWalk2Free,405575,2,Germany
+DE,Non-Education,com.blinkslabs.blinkist.android,404777,3,Germany
+DE,Non-Education,com.nicedayapps.iss_free,357037,4,Germany
+DE,Non-Education,cn.danatech.xingseus,351818,5,Germany
+DE,Non-Education,com.floraincognita.app.floraincognita,313722,6,Germany
+DE,Non-Education,com.tocaboca.tocakitchen,274438,7,Germany
+DE,Non-Education,com.t11.skyviewfree,262150,8,Germany
+DE,Non-Education,com.miga.world,246345,9,Germany
+DE,Non-Education,com.tocaboca.tocahairsalon4,234951,10,Germany
+DE,Parents,com.kaspersky.safekids,28165,1,Germany
+DE,Parents,com.meb.vbsmobil,3895,2,Germany
+DE,Parents,com.kenzandmom,1728,3,Germany
+DE,Parents,com.df.dragonfamily,1651,4,Germany
+DE,Parents,de.kidcoins.kidcoins,1422,5,Germany
+DE,Parents,com.jamitlabs.knax,900,6,Germany
+DE,Parents,com.seepferdchenapp.app,802,7,Germany
+DE,Parents,com.kinedu.appkinedu,766,8,Germany
+DE,Parents,tinytap.kids.learning.games,729,9,Germany
+DE,Parents,com.remind101,555,10,Germany
+DE,Preschool,forqan.tech.babypuzzles_edu.ads,179404,1,Germany
+DE,Preschool,kr.co.smartstudy.babyshark_android_googlemarket,148960,2,Germany
+DE,Preschool,com.forqan.tech.Jobs,133345,3,Germany
+DE,Preschool,com.sagosago.World.googleplay,123697,4,Germany
+DE,Preschool,com.edokicademy.montessoriacademy,110659,5,Germany
+DE,Preschool,ai.mybuddy.talkingflashcards_new,106546,6,Germany
+DE,Preschool,com.playtoddlers.sweethomestories.free,106109,7,Germany
+DE,Preschool,al.trigonom.zahlenschreiben,91221,8,Germany
+DE,Preschool,com.storytoys.myveryhungrycaterpillar.free.android.googleplay,83061,9,Germany
+DE,Preschool,com.logicappkids,75132,10,Germany
+DE,Professional & Career,com.linkedin.android.learning,71517,1,Germany
+DE,Professional & Career,hacking.learnhacking.learn.hack.ethicalhacking.programming.coding.hackerx.cybersecurity,25385,2,Germany
+DE,Professional & Career,de.absolvio.android,12059,3,Germany
+DE,Professional & Career,org.coursera.android,6069,4,Germany
+DE,Professional & Career,de.elsevier.pflegeapp,4932,5,Germany
+DE,Professional & Career,de.blaulichtschule.bsstrafrecht,2349,6,Germany
+DE,Professional & Career,dlz.app.ausbildungalmania,2237,7,Germany
+DE,Professional & Career,alexander.dev.apps.einstellungstesttrainerv14,2209,8,Germany
+DE,Professional & Career,de.ipplus.eminder,1295,9,Germany
+DE,Professional & Career,de.augala.lernapp,986,10,Germany
+DE,Subject Learning,com.duolingo,503780,1,Germany
+DE,Subject Learning,com.babbel.mobile.android.en,500710,2,Germany
+DE,Subject Learning,com.microblink.photomath,465147,3,Germany
+DE,Subject Learning,com.busuu.android.enc,430075,4,Germany
+DE,Subject Learning,com.atistudios.mondly.languages,400898,5,Germany
+DE,Subject Learning,de.phase6.freeversion.beta,394679,6,Germany
+DE,Subject Learning,com.lubosmikusiak.articuli.derdiedas,372419,7,Germany
+DE,Subject Learning,com.yousician.yousician,368997,8,Germany
+DE,Subject Learning,com.memrise.android.memrisecompanion,359402,9,Germany
+DE,Subject Learning,com.ichi2.anki,349951,10,Germany
+DE,Teaching and Learning,no.mobitroll.kahoot.android,444664,1,Germany
+DE,Teaching and Learning,com.quizlet.quizletandroid,429786,2,Germany
+DE,Teaching and Learning,com.solocode.anton,400898,3,Germany
+DE,Teaching and Learning,com.moodle.moodlemobile,369373,4,Germany
+DE,Teaching and Learning,de.appsistance.abfragerapp,341078,5,Germany
+DE,Teaching and Learning,com.simpleclub.android,320363,6,Germany
+DE,Teaching and Learning,de.rwth_aachen.phyphox,308658,7,Germany
+DE,Teaching and Learning,de.klett.klettaugmented,291169,8,Germany
+DE,Teaching and Learning,com.studysmarter,289797,9,Germany
+DE,Teaching and Learning,com.udemy.android,243524,10,Germany
+DK,Cognitive Development,com.brainbow.peak.app,315760,1,Denmark
+DK,Cognitive Development,com.lumoslabs.lumosity,298655,2,Denmark
+DK,Cognitive Development,com.wonder,253722,3,Denmark
+DK,Cognitive Development,com.wizkids.appwriter,244250,4,Denmark
+DK,Cognitive Development,air.nn.mobile.app.main,243136,5,Denmark
+DK,Cognitive Development,com.mv_nordic.intowords,237525,6,Denmark
+DK,Cognitive Development,org.aztest.iqtest,80551,7,Denmark
+DK,Cognitive Development,com.memorado.brain.games,76983,8,Denmark
+DK,Cognitive Development,com.studymind,16898,9,Denmark
+DK,Cognitive Development,com.memory.brain.training.games,16328,10,Denmark
+DK,Education Management,dk.appbureauet.uddata,296002,1,Denmark
+DK,Education Management,com.jacoblauritzen.lectioplus,277694,2,Denmark
+DK,Education Management,dk.inlogic.unified,183506,3,Denmark
+DK,Education Management,com.totus_labs.lectio,140494,4,Denmark
+DK,Education Management,daldev.android.gradehelper,89380,5,Denmark
+DK,Education Management,dk.aau.student,77465,6,Denmark
+DK,Education Management,dk.nodes.ist,60891,7,Denmark
+DK,Education Management,dk.inlogic.sprogcentermidt,37517,8,Denmark
+DK,Education Management,com.grupet.web.app,37269,9,Denmark
+DK,Education Management,dk.inlogic.clavis,31434,10,Denmark
+DK,Licensing Exam,com.greyarea.teorikortet,125250,1,Denmark
+DK,Licensing Exam,com.evjenth.anstr.theory,56071,2,Denmark
+DK,Licensing Exam,dk.institutforjagt,23655,3,Denmark
+DK,Licensing Exam,no.appide.teoriproveg,20948,4,Denmark
+DK,Licensing Exam,pl.protulisapps.znaki_multi,14290,5,Denmark
+DK,Licensing Exam,com.shoyo.znakovi,11699,6,Denmark
+DK,Licensing Exam,com.crtmobile.chestionaredrpciv,8912,7,Denmark
+DK,Licensing Exam,com.mydrivingacademy.mittkorkort,7754,8,Denmark
+DK,Licensing Exam,com.dzano.drivingtests,6793,9,Denmark
+DK,Licensing Exam,com.greyarea.dkjeger,5147,10,Denmark
+DK,Non-Education,org.plantnet,428335,1,Denmark
+DK,Non-Education,com.t11.skyviewfree,413171,2,Denmark
+DK,Non-Education,com.vitotechnology.StarWalk2Free,411205,3,Denmark
+DK,Non-Education,dk.studiz,387107,4,Denmark
+DK,Non-Education,cn.danatech.xingseus,373604,5,Denmark
+DK,Non-Education,com.nicedayapps.iss_free,363417,6,Denmark
+DK,Non-Education,com.tocaboca.tocakitchen,360866,7,Denmark
+DK,Non-Education,com.useeum.useeum,335893,8,Denmark
+DK,Non-Education,com.fws.plantsnap2,322943,9,Denmark
+DK,Non-Education,org.inaturalist.android,298922,10,Denmark
+DK,Parents,com.itslearning.siparents2,202897,1,Denmark
+DK,Parents,dk.tandplejenaarhus.boerstevenner,48781,2,Denmark
+DK,Parents,dk.coolshop.lola,40235,3,Denmark
+DK,Parents,com.kinedu.appkinedu,15344,4,Denmark
+DK,Parents,tinytap.kids.learning.games,10190,5,Denmark
+DK,Parents,com.classlist.parent,3139,6,Denmark
+DK,Parents,com.toddle.family,2814,7,Denmark
+DK,Parents,com.kenzandmom,1849,8,Denmark
+DK,Parents,com.hip.app,1744,9,Denmark
+DK,Parents,pl.edu.vulcan.hebe,838,10,Denmark
+DK,Preschool,com.tappyhappy.appforchildren,376107,1,Denmark
+DK,Preschool,com.tappyhappy.peekaboo,329350,2,Denmark
+DK,Preschool,com.tappyhappy.puzzlemagicfree,291953,3,Denmark
+DK,Preschool,com.tappyhappy.appforkids,286290,4,Denmark
+DK,Preschool,com.tappyhappy.puzzleforchildren,283154,5,Denmark
+DK,Preschool,com.tappyhappy.funfortoddlers,231033,6,Denmark
+DK,Preschool,com.juniorpear.animal_sound,165121,7,Denmark
+DK,Preschool,se.mralbert.junior,160936,8,Denmark
+DK,Preschool,kr.co.smartstudy.babyshark_android_googlemarket,150939,9,Denmark
+DK,Preschool,com.playtoddlers.sweethomestories.free,150923,10,Denmark
+DK,Professional & Career,com.linkedin.android.learning,294644,1,Denmark
+DK,Professional & Career,org.coursera.android,141099,2,Denmark
+DK,Professional & Career,dk.studymind.jobindex,52678,3,Denmark
+DK,Professional & Career,dk.companyoung.skillscph,50033,4,Denmark
+DK,Professional & Career,hacking.learnhacking.learn.hack.ethicalhacking.programming.coding.hackerx.cybersecurity,39341,5,Denmark
+DK,Professional & Career,com.playyourtalent.prod,16281,6,Denmark
+DK,Professional & Career,com.conzentrate.learningarena.mobile.myrupnyhauge,14249,7,Denmark
+DK,Professional & Career,dk.sus.rengoering.quiz,11876,8,Denmark
+DK,Professional & Career,dk.sus.guard_rules,10904,9,Denmark
+DK,Professional & Career,com.pluralsight,10869,10,Denmark
+DK,Subject Learning,com.duolingo,503244,1,Denmark
+DK,Subject Learning,com.atistudios.mondly.languages,471862,2,Denmark
+DK,Subject Learning,com.babbel.mobile.android.en,455258,3,Denmark
+DK,Subject Learning,com.microblink.photomath,448115,4,Denmark
+DK,Subject Learning,com.yousician.yousician,436005,5,Denmark
+DK,Subject Learning,com.memrise.android.memrisecompanion,378890,6,Denmark
+DK,Subject Learning,com.funeasylearn.danish,361676,7,Denmark
+DK,Subject Learning,com.atistudios.mondly.da,322060,8,Denmark
+DK,Subject Learning,com.sololearn,300331,9,Denmark
+DK,Subject Learning,com.getmimo,280633,10,Denmark
+DK,Teaching and Learning,no.mobitroll.kahoot.android,502138,1,Denmark
+DK,Teaching and Learning,com.itslearning.itslearningintapp,429972,2,Denmark
+DK,Teaching and Learning,com.google.android.apps.classroom,345164,3,Denmark
+DK,Teaching and Learning,com.quizlet.quizletandroid,329902,4,Denmark
+DK,Teaching and Learning,com.moodle.moodlemobile,301765,5,Denmark
+DK,Teaching and Learning,com.instructure.candroid,296803,6,Denmark
+DK,Teaching and Learning,com.udemy.android,295110,7,Denmark
+DK,Teaching and Learning,es.monkimun.lingokids,274287,8,Denmark
+DK,Teaching and Learning,org.khanacademy.android,212687,9,Denmark
+DK,Teaching and Learning,com.socrative.student,202424,10,Denmark
+ES,Cognitive Development,air.nn.mobile.app.main,248176,1,Spain
+ES,Cognitive Development,com.brainbow.peak.app,219587,2,Spain
+ES,Cognitive Development,com.lumoslabs.lumosity,191648,3,Spain
+ES,Cognitive Development,com.wonder,56962,4,Spain
+ES,Cognitive Development,test.me.in.psicotecnicos,35660,5,Spain
+ES,Cognitive Development,com.memory.brain.training.games,32047,6,Spain
+ES,Cognitive Development,com.speedreading.alexander.speedreading,10954,7,Spain
+ES,Cognitive Development,com.app.city.test.testOposPsicotecnicos,8460,8,Spain
+ES,Cognitive Development,com.tellmewow.focus,6327,9,Spain
+ES,Cognitive Development,mobi.stimulus.brainchallenge,3703,10,Spain
+ES,Education Management,com.classdojo.android,433945,1,Spain
+ES,Education Management,daldev.android.gradehelper,354796,2,Spain
+ES,Education Management,com.dinantia.dinantia,191171,3,Spain
+ES,Education Management,es.educarex.rayuela,143504,4,Spain
+ES,Education Management,org.clickedu.Clickedu,142890,5,Spain
+ES,Education Management,es.juntadeandalucia.ced.senecadroid,112055,6,Spain
+ES,Education Management,com.additioapp.additio,107446,7,Spain
+ES,Education Management,com.MultiExpo.ieduca,95797,8,Spain
+ES,Education Management,com.claudivan.agendadoestudanteplus,82186,9,Spain
+ES,Education Management,es.uned.intecca.calificaciones,68100,10,Spain
+ES,Licensing Exam,com.TodoTest,480827,1,Spain
+ES,Licensing Exam,com.vialsoft.autoescuelamovilfree,460997,2,Spain
+ES,Licensing Exam,com.ismaelkmhotmail.com.practicatest,411544,3,Spain
+ES,Licensing Exam,com.aeol.aeolcloud,292261,4,Spain
+ES,Licensing Exam,es.dribo.user_app,290372,5,Spain
+ES,Licensing Exam,com.intercom.facilauto,289538,6,Spain
+ES,Licensing Exam,com.bubblingiso.TestdeNacionalidadEspanola,267914,7,Spain
+ES,Licensing Exam,com.etrasa.android.NovaSmartPhone0,253416,8,Spain
+ES,Licensing Exam,com.institutocervantes.pruebaccse,241649,9,Spain
+ES,Licensing Exam,com.autoescuela.alberto,241449,10,Spain
+ES,Non-Education,org.plantnet,450424,1,Spain
+ES,Non-Education,com.vitotechnology.StarWalk2Free,410587,2,Spain
+ES,Non-Education,cn.danatech.xingseus,340971,3,Spain
+ES,Non-Education,com.tocaboca.tocakitchen,326485,4,Spain
+ES,Non-Education,com.nicedayapps.iss_free,260626,5,Spain
+ES,Non-Education,com.miga.world,253934,6,Spain
+ES,Non-Education,com.bible.kids,250846,7,Spain
+ES,Non-Education,edu.mit.appinventor.aicompanion3,249027,8,Spain
+ES,Non-Education,com.tocaboca.tocahairsalon4,244959,9,Spain
+ES,Non-Education,com.t11.skyviewfree,243099,10,Spain
+ES,Parents,juntadeandalucia.ced.pasen,375644,1,Spain
+ES,Parents,com.MultiExpo.tokappschool,370596,2,Spain
+ES,Parents,alexiaapp.alexia.cat.alexiaapp,261204,3,Spain
+ES,Parents,com.educamos.familiasv2,232911,4,Spain
+ES,Parents,es.xunta.edu.abalarmobil,189886,5,Spain
+ES,Parents,org.madrid.raiz.roble,181537,6,Spain
+ES,Parents,es.gva.itacafamilias,159642,7,Spain
+ES,Parents,org.gobiernodecanarias.ceu.appfamilias,117302,8,Spain
+ES,Parents,com.remind101,105889,9,Spain
+ES,Parents,com.esemtia,80695,10,Spain
+ES,Preschool,forqan.tech.babypuzzles_edu.ads,211914,1,Spain
+ES,Preschool,com.playtoddlers.sweethomestories.free,198966,2,Spain
+ES,Preschool,com.forqan.tech.Jobs,190143,3,Spain
+ES,Preschool,air.educaplanet.grin.leo1.full,159815,4,Spain
+ES,Preschool,com.edokicademy.montessoriacademy,157880,5,Spain
+ES,Preschool,com.playtoddlers.happydaycarestories.free,152594,6,Spain
+ES,Preschool,kr.co.smartstudy.babyshark_android_googlemarket,150954,7,Spain
+ES,Preschool,ai.mybuddy.talkingflashcards_new,146590,8,Spain
+ES,Preschool,carrioncastillo.puntos.animales,146388,9,Spain
+ES,Preschool,org.scratchjr.android,123776,10,Spain
+ES,Professional & Career,com.opositatest,353782,1,Spain
+ES,Professional & Career,com.linkedin.android.learning,139217,2,Spain
+ES,Professional & Career,org.coursera.android,127336,3,Spain
+ES,Professional & Career,innotest.testguardiacivil2018,67223,4,Spain
+ES,Professional & Career,innotest.policianacional,45777,5,Spain
+ES,Professional & Career,com.englishscore,39878,6,Spain
+ES,Professional & Career,com.compettia.retame,15424,7,Spain
+ES,Professional & Career,com.moybu.apps.iopos.icorreos,14564,8,Spain
+ES,Professional & Career,com.ferrmoldev.psicotecnicos.oposiciones,14124,9,Spain
+ES,Professional & Career,com.sos.hosteleria,13760,10,Spain
+ES,Subject Learning,com.duolingo,504359,1,Spain
+ES,Subject Learning,com.microblink.photomath,477782,2,Spain
+ES,Subject Learning,com.babbel.mobile.android.en,460020,3,Spain
+ES,Subject Learning,com.busuu.android.enc,380092,4,Spain
+ES,Subject Learning,com.yousician.yousician,361239,5,Spain
+ES,Subject Learning,net.tandem,328537,6,Spain
+ES,Subject Learning,com.atistudios.mondly.languages,316690,7,Spain
+ES,Subject Learning,com.memrise.android.memrisecompanion,314043,8,Spain
+ES,Subject Learning,com.devsense.symbolab,303933,9,Spain
+ES,Subject Learning,com.joytunes.simplypiano,268632,10,Spain
+ES,Teaching and Learning,no.mobitroll.kahoot.android,482944,1,Spain
+ES,Teaching and Learning,com.google.android.apps.classroom,412272,2,Spain
+ES,Teaching and Learning,com.moodle.moodlemobile,408331,3,Spain
+ES,Teaching and Learning,es.monkimun.lingokids,384601,4,Spain
+ES,Teaching and Learning,com.udemy.android,288557,5,Spain
+ES,Teaching and Learning,com.quizlet.quizletandroid,284395,6,Spain
+ES,Teaching and Learning,com.edpuzzle.student,193710,7,Spain
+ES,Teaching and Learning,com.google.socratic,154687,8,Spain
+ES,Teaching and Learning,com.puteko.colarmix,151197,9,Spain
+ES,Teaching and Learning,com.vidku.app.flipgrid,145491,10,Spain
+FR,Cognitive Development,air.nn.mobile.app.main,380922,1,France
+FR,Cognitive Development,com.brainbow.peak.app,258101,2,France
+FR,Cognitive Development,com.lumoslabs.lumosity,93103,3,France
+FR,Cognitive Development,fr.lemonde.memorable,91366,4,France
+FR,Cognitive Development,com.wonder,34178,5,France
+FR,Cognitive Development,com.memory.brain.training.games,32734,6,France
+FR,Cognitive Development,org.aztest.iqtest,9696,7,France
+FR,Cognitive Development,com.speedreading.alexander.speedreading,9025,8,France
+FR,Cognitive Development,com.Store.ReaderPro,7247,9,France
+FR,Cognitive Development,com.dynseo.stimart.joe,6868,10,France
+FR,Education Management,com.IndexEducation.Pronote,435747,1,France
+FR,Education Management,com.ecoledirecte.edmobile,342503,2,France
+FR,Education Management,co.roomapp.klassroom,261086,3,France
+FR,Education Management,daldev.android.gradehelper,247691,4,France
+FR,Education Management,com.ode.one,196833,5,France
+FR,Education Management,com.diedm.tma_public,191399,6,France
+FR,Education Management,com.classdojo.android,162099,7,France
+FR,Education Management,com.ode.neo,62596,8,France
+FR,Education Management,fr.openent.mobile,42461,9,France
+FR,Education Management,com.plickers.client.android,40841,10,France
+FR,Licensing Exam,com.kreactive.digischool.codedelaroute,453639,1,France
+FR,Licensing Exam,air.com.permisecole.peandrophone,451952,2,France
+FR,Licensing Exam,com.Zimbombah.CodeDeLaRoute,329360,3,France
+FR,Licensing Exam,oiz.labs.codedelaroute,300621,4,France
+FR,Licensing Exam,io.codedelaroute.main,290487,5,France
+FR,Licensing Exam,com.codeenpoche,275162,6,France
+FR,Licensing Exam,com.envoituresimone.app,252992,7,France
+FR,Licensing Exam,air.com.ediser.etgmobilefree,229921,8,France
+FR,Licensing Exam,fr.permis.codedelaroute,137519,9,France
+FR,Licensing Exam,dd.culturegenerale,137192,10,France
+FR,Non-Education,org.plantnet,484141,1,France
+FR,Non-Education,com.vitotechnology.StarWalk2Free,397803,2,France
+FR,Non-Education,cn.danatech.xingseus,370194,3,France
+FR,Non-Education,com.nicedayapps.iss_free,310687,4,France
+FR,Non-Education,com.noctuasoftware.stellarium_free,271088,5,France
+FR,Non-Education,com.tocaboca.tocakitchen,243526,6,France
+FR,Non-Education,com.miga.world,240181,7,France
+FR,Non-Education,com.vertaler.fren,237892,8,France
+FR,Non-Education,com.bible.kids,230118,9,France
+FR,Non-Education,com.t11.skyviewfree,226348,10,France
+FR,Parents,com.educartable.app,227113,1,France
+FR,Parents,com.sfr.android.coach,135706,2,France
+FR,Parents,com.sfr.android.ado,66726,3,France
+FR,Parents,com.kidizz.KidizzApp,61890,4,France
+FR,Parents,com.appcoretech.educonnect,28641,5,France
+FR,Parents,com.brothertongue.learner.prepare,16680,6,France
+FR,Parents,com.edunext.educonnect,10087,7,France
+FR,Parents,com.xooloo.digital.coach,5788,8,France
+FR,Parents,com.sfr.android.kids,2324,9,France
+FR,Parents,com.laba.laba_parent,2228,10,France
+FR,Preschool,com.edokicademy.montessoriacademy,340329,1,France
+FR,Preschool,com.lescapadou.cursivefree,281427,2,France
+FR,Preschool,kr.co.smartstudy.babyshark_android_googlemarket,180659,3,France
+FR,Preschool,forqan.tech.babypuzzles_edu.ads,180007,4,France
+FR,Preschool,com.playtoddlers.sweethomestories.free,157010,5,France
+FR,Preschool,com.forqan.tech.Jobs,143534,6,France
+FR,Preschool,org.scratchjr.android,139320,7,France
+FR,Preschool,com.playtoddlers.happydaycarestories.free,97235,8,France
+FR,Preschool,com.lescapadou.tracingfree,82511,9,France
+FR,Preschool,com.storytoys.lego.duplo.marvel.spiderman.avengers.kids.preschool.free.googleplay,67868,10,France
+FR,Professional & Career,com.linkedin.android.learning,147301,1,France
+FR,Professional & Career,org.coursera.android,64086,2,France
+FR,Professional & Career,com.pineapplestudio.sengagerdanslarmee,60347,3,France
+FR,Professional & Career,com.wilbi.app,50836,4,France
+FR,Professional & Career,hacking.learnhacking.learn.hack.ethicalhacking.programming.coding.hackerx.cybersecurity,36797,5,France
+FR,Professional & Career,com.englishscore,11271,6,France
+FR,Professional & Career,com.marmelade.android.v2,6041,7,France
+FR,Professional & Career,com.skillandyou,2393,8,France
+FR,Professional & Career,com.digischool.concours.fonction.publique,1549,9,France
+FR,Professional & Career,digitalmarketing.digital.marketing.dm.ads.learn.socialmedia.onlinemarketing,1259,10,France
+FR,Subject Learning,com.duolingo,503961,1,France
+FR,Subject Learning,com.babbel.mobile.android.en,488626,2,France
+FR,Subject Learning,com.microblink.photomath,435386,3,France
+FR,Subject Learning,com.busuu.android.enc,394968,4,France
+FR,Subject Learning,com.atistudios.mondly.languages,390645,5,France
+FR,Subject Learning,com.yousician.yousician,389814,6,France
+FR,Subject Learning,com.memrise.android.memrisecompanion,362178,7,France
+FR,Subject Learning,net.tandem,360375,8,France
+FR,Subject Learning,com.hellotalk,316050,9,France
+FR,Subject Learning,com.projet.voltaire,311427,10,France
+FR,Teaching and Learning,no.mobitroll.kahoot.android,466152,1,France
+FR,Teaching and Learning,com.quizlet.quizletandroid,386071,2,France
+FR,Teaching and Learning,com.nomadeducation.nomadeducation,310707,3,France
+FR,Teaching and Learning,com.schoolmouv,295163,4,France
+FR,Teaching and Learning,com.adel.wiloki,271398,5,France
+FR,Teaching and Learning,com.google.android.apps.classroom,212375,6,France
+FR,Teaching and Learning,com.kartable.android,212335,7,France
+FR,Teaching and Learning,com.moodle.moodlemobile,212280,8,France
+FR,Teaching and Learning,com.udemy.android,206101,9,France
+FR,Teaching and Learning,es.monkimun.lingokids,169146,10,France
+GB,Cognitive Development,com.wonder,437207,1,United Kingdom
+GB,Cognitive Development,com.lumoslabs.lumosity,286550,2,United Kingdom
+GB,Cognitive Development,com.brainbow.peak.app,279129,3,United Kingdom
+GB,Cognitive Development,air.nn.mobile.app.main,272930,4,United Kingdom
+GB,Cognitive Development,com.elektron.mindpal,220840,5,United Kingdom
+GB,Cognitive Development,org.aztest.iqtest,83421,6,United Kingdom
+GB,Cognitive Development,com.monclarity.brainwell,31030,7,United Kingdom
+GB,Cognitive Development,com.memory.brain.training.games,19290,8,United Kingdom
+GB,Cognitive Development,com.iq.test.online.tools.store,10425,9,United Kingdom
+GB,Cognitive Development,com.idamusic.lines,8733,10,United Kingdom
+GB,Education Management,com.classdojo.android,479644,1,United Kingdom
+GB,Education Management,com.classcharts.android.student,191606,2,United Kingdom
+GB,Education Management,daldev.android.gradehelper,189784,3,United Kingdom
+GB,Education Management,com.overnetdata.edulinkone,184201,4,United Kingdom
+GB,Education Management,com.virblue.mystudylife,46788,5,United Kingdom
+GB,Education Management,com.inomma.procwise,31710,6,United Kingdom
+GB,Education Management,com.edukey.teachers,29866,7,United Kingdom
+GB,Education Management,com.firefly.studentPlanner,27953,8,United Kingdom
+GB,Education Management,com.epraiselimited.epraise,26181,9,United Kingdom
+GB,Education Management,com.eskimos.tobap,20004,10,United Kingdom
+GB,Licensing Exam,uk.co.focusmm.dts_theory_free,440171,1,United Kingdom
+GB,Licensing Exam,uk.co.focusmm.combo4free,438985,2,United Kingdom
+GB,Licensing Exam,com.theorytestukcarfree,407901,3,United Kingdom
+GB,Licensing Exam,com.bubblingiso.LifeintheUKTest,257836,4,United Kingdom
+GB,Licensing Exam,com.glenmax.theorytest,251042,5,United Kingdom
+GB,Licensing Exam,com.glenmax.highwaycode,204747,6,United Kingdom
+GB,Licensing Exam,dvla.dvsa.Driving.Theory.Test.lessons.UK.Car.Bike.motorcycle.Drivers,181002,7,United Kingdom
+GB,Licensing Exam,com.dow.lifeintheuktest,147162,8,United Kingdom
+GB,Licensing Exam,com.driverlicenseapp,130879,9,United Kingdom
+GB,Licensing Exam,uk.co.theorytestpro.theorytestprobilling,130554,10,United Kingdom
+GB,Non-Education,com.vitotechnology.StarWalk2Free,417174,1,United Kingdom
+GB,Non-Education,com.PYOPYO.StarTracker,389238,2,United Kingdom
+GB,Non-Education,cn.danatech.xingseus,384807,3,United Kingdom
+GB,Non-Education,com.t11.skyviewfree,367291,4,United Kingdom
+GB,Non-Education,com.nicedayapps.iss_free,364439,5,United Kingdom
+GB,Non-Education,org.plantnet,356512,6,United Kingdom
+GB,Non-Education,com.tocaboca.tocakitchen,348797,7,United Kingdom
+GB,Non-Education,com.blinkslabs.blinkist.android,344477,8,United Kingdom
+GB,Non-Education,com.woodlandtrust,275297,9,United Kingdom
+GB,Non-Education,com.noctuasoftware.stellarium_free,263125,10,United Kingdom
+GB,Parents,uk.co.parentmail.parentmail,368755,1,United Kingdom
+GB,Parents,com.schoolcomms.sga,336713,2,United Kingdom
+GB,Parents,com.teachers2parents.teachers2parents,328549,3,United Kingdom
+GB,Parents,uk.co.capita.sims.mobile.parentapp,255166,4,United Kingdom
+GB,Parents,com.fsf.tapestryandroid,235908,5,United Kingdom
+GB,Parents,com.results.squared.connected,194011,6,United Kingdom
+GB,Parents,com.classcharts.android,185767,7,United Kingdom
+GB,Parents,com.bromcom.mcas,182764,8,United Kingdom
+GB,Parents,com.arboreducation.parentapp,140677,9,United Kingdom
+GB,Parents,com.cloudthing.mmeparent,136134,10,United Kingdom
+GB,Preschool,kr.co.smartstudy.babyshark_android_googlemarket,318598,1,United Kingdom
+GB,Preschool,com.sagosago.World.googleplay,236807,2,United Kingdom
+GB,Preschool,org.scratchjr.android,232705,3,United Kingdom
+GB,Preschool,com.playtoddlers.sweethomestories.free,157849,4,United Kingdom
+GB,Preschool,com.storytoys.myveryhungrycaterpillar.free.android.googleplay,155948,5,United Kingdom
+GB,Preschool,forqan.tech.babypuzzles_edu.ads,151232,6,United Kingdom
+GB,Preschool,kr.co.smartstudy.singingphone_android_googlemarket,149020,7,United Kingdom
+GB,Preschool,org.khankids.android,137557,8,United Kingdom
+GB,Preschool,com.acamar.bingwatchplaylearn,120639,9,United Kingdom
+GB,Preschool,com.playtoddlers.happydaycarestories.free,111342,10,United Kingdom
+GB,Professional & Career,com.linkedin.android.learning,287704,1,United Kingdom
+GB,Professional & Career,org.coursera.android,197312,2,United Kingdom
+GB,Professional & Career,com.getlicensed.protect.released,74574,3,United Kingdom
+GB,Professional & Career,hacking.learnhacking.learn.hack.ethicalhacking.programming.coding.hackerx.cybersecurity,22409,4,United Kingdom
+GB,Professional & Career,com.englishscore,20942,5,United Kingdom
+GB,Professional & Career,com.estudyme.cscs,20097,6,United Kingdom
+GB,Professional & Career,com.careerfairplus.cf_plus,16828,7,United Kingdom
+GB,Professional & Career,com.pluralsight,9696,8,United Kingdom
+GB,Professional & Career,com.cscs.test.citb,7893,9,United Kingdom
+GB,Professional & Career,uk.co.citb.imagitech.hsepub,6527,10,United Kingdom
+GB,Subject Learning,com.duolingo,505662,1,United Kingdom
+GB,Subject Learning,com.babbel.mobile.android.en,460146,2,United Kingdom
+GB,Subject Learning,com.yousician.yousician,436195,3,United Kingdom
+GB,Subject Learning,com.microblink.photomath,426878,4,United Kingdom
+GB,Subject Learning,com.memrise.android.memrisecompanion,414916,5,United Kingdom
+GB,Subject Learning,com.atistudios.mondly.languages,346659,6,United Kingdom
+GB,Subject Learning,air.com.rosettastone.mobile.CoursePlayer,300770,7,United Kingdom
+GB,Subject Learning,com.sololearn,295808,8,United Kingdom
+GB,Subject Learning,com.busuu.android.enc,292450,9,United Kingdom
+GB,Subject Learning,com.ichi2.anki,273759,10,United Kingdom
+GB,Teaching and Learning,no.mobitroll.kahoot.android,487083,1,United Kingdom
+GB,Teaching and Learning,com.quizlet.quizletandroid,405382,2,United Kingdom
+GB,Teaching and Learning,com.google.android.apps.classroom,398427,3,United Kingdom
+GB,Teaching and Learning,com.udemy.android,365255,4,United Kingdom
+GB,Teaching and Learning,uk.co.smhw.android,351791,5,United Kingdom
+GB,Teaching and Learning,uk.co.bbc.bitesize,291293,6,United Kingdom
+GB,Teaching and Learning,es.monkimun.lingokids,279010,7,United Kingdom
+GB,Teaching and Learning,org.khanacademy.android,265997,8,United Kingdom
+GB,Teaching and Learning,com.blake.readingeggs.android,260568,9,United Kingdom
+GB,Teaching and Learning,com.moodle.moodlemobile,253737,10,United Kingdom
+IT,Cognitive Development,air.nn.mobile.app.main,309219,1,Italy
+IT,Cognitive Development,com.brainbow.peak.app,201147,2,Italy
+IT,Cognitive Development,com.wonder,69914,3,Italy
+IT,Cognitive Development,org.aztest.iqtest,24816,4,Italy
+IT,Cognitive Development,com.memory.brain.training.games,20716,5,Italy
+IT,Cognitive Development,com.Store.ReaderPro,17301,6,Italy
+IT,Cognitive Development,com.lumoslabs.lumosity,14343,7,Italy
+IT,Cognitive Development,com.speedreading.alexander.speedreading,8669,8,Italy
+IT,Cognitive Development,za.co.lukestonehm.logicaldefence,6186,9,Italy
+IT,Cognitive Development,com.memorado.brain.games,3473,10,Italy
+IT,Education Management,daldev.android.gradehelper,352539,1,Italy
+IT,Education Management,it.argosoft.didupsmart,241656,2,Italy
+IT,Education Management,eu.spaggiari.classevivadocente,183925,3,Italy
+IT,Education Management,it.madisoft.areatutorestudente,171187,4,Italy
+IT,Education Management,lu.gian.uniwhere,144470,5,Italy
+IT,Education Management,libretto.my.greco.com.mylibretto,129770,6,Italy
+IT,Education Management,com.tomminosoftware.media,113521,7,Italy
+IT,Education Management,com.atlantictechnologies.cooperlascuola,93940,8,Italy
+IT,Education Management,com.diy.school,83085,9,Italy
+IT,Education Management,it.istruzione.myis,73432,10,Italy
+IT,Licensing Exam,com.app.QuizPatenteGold,440177,1,Italy
+IT,Licensing Exam,com.bokapp.quizpatente,423905,2,Italy
+IT,Licensing Exam,air.it.patente.quizapp,417424,3,Italy
+IT,Licensing Exam,com.edena.mininterno,277277,4,Italy
+IT,Licensing Exam,com.app.QuizPatentinoGold,206717,5,Italy
+IT,Licensing Exam,appinventor.ai_valentinonufrio.AppQuizPatenteOnline,192188,6,Italy
+IT,Licensing Exam,app.quizpatenteonline.quizpatenteb2018pertutti,186252,7,Italy
+IT,Licensing Exam,com.phoenix986.quiz,174708,8,Italy
+IT,Licensing Exam,com.vialsoft.patentebfreemium,162607,9,Italy
+IT,Licensing Exam,it.egaf.AppsEgaf.QuizPatente,160033,10,Italy
+IT,Non-Education,org.plantnet,446751,1,Italy
+IT,Non-Education,com.vitotechnology.StarWalk2Free,382580,2,Italy
+IT,Non-Education,com.tocaboca.tocakitchen,349448,3,Italy
+IT,Non-Education,cn.danatech.xingseus,334986,4,Italy
+IT,Non-Education,com.nicedayapps.iss_free,303707,5,Italy
+IT,Non-Education,cei.liturgiadelleore.app,292709,6,Italy
+IT,Non-Education,com.google.android.apps.cultural,273937,7,Italy
+IT,Non-Education,com.bible.kids,266094,8,Italy
+IT,Non-Education,com.DeALink,261352,9,Italy
+IT,Non-Education,com.tocaboca.tocahairsalon4,253744,10,Italy
+IT,Parents,eu.spaggiari.classevivafamiglia,413944,1,Italy
+IT,Parents,com.axiositalia.re.family,370159,2,Italy
+IT,Parents,com.axiositalia.re.students,189263,3,Italy
+IT,Parents,it.argosoft.didup.famiglia.new,166080,4,Italy
+IT,Parents,it.mastercom.parents.app,155965,5,Italy
+IT,Parents,com.eticasoluzioni.comunicApp,75438,6,Italy
+IT,Parents,com.phonegap.soluzione002,63173,7,Italy
+IT,Parents,it.lookup.scuolamenu,49965,8,Italy
+IT,Parents,it.tndigit.isi.famiglia,14416,9,Italy
+IT,Parents,it.codebase.archimede.mobile,13815,10,Italy
+IT,Preschool,com.playtoddlers.sweethomestories.free,257688,1,Italy
+IT,Preschool,com.playtoddlers.happydaycarestories.free,222464,2,Italy
+IT,Preschool,com.forqan.tech.Jobs,213016,3,Italy
+IT,Preschool,com.acamar.bingwatchplaylearn,181360,4,Italy
+IT,Preschool,carrioncastillo.puntos.animales,124367,5,Italy
+IT,Preschool,kr.co.smartstudy.babyshark_android_googlemarket,122369,6,Italy
+IT,Preschool,com.storytoys.lego.duplo.marvel.spiderman.avengers.kids.preschool.free.googleplay,102389,7,Italy
+IT,Preschool,kr.co.smartstudy.singingphone_android_googlemarket,96521,8,Italy
+IT,Preschool,org.scratchjr.android,90513,9,Italy
+IT,Preschool,com.eruditoplus.acad.funnyfood,84325,10,Italy
+IT,Professional & Career,com.app.concorsando,420384,1,Italy
+IT,Professional & Career,it.alphatest.alphatest,101640,2,Italy
+IT,Professional & Career,com.linkedin.android.learning,77910,3,Italy
+IT,Professional & Career,com.englishscore,27762,4,Italy
+IT,Professional & Career,hacking.learnhacking.learn.hack.ethicalhacking.programming.coding.hackerx.cybersecurity,23550,5,Italy
+IT,Professional & Career,org.coursera.android,22480,6,Italy
+IT,Professional & Career,com.sweetlife.justquiz.infermieri,7101,7,Italy
+IT,Professional & Career,claudiofus.software.com.medapp2018,5462,8,Italy
+IT,Professional & Career,com.companyname.nurselife,5453,9,Italy
+IT,Professional & Career,com.soulfully.quizmedicina2020,4227,10,Italy
+IT,Subject Learning,com.duolingo,499627,1,Italy
+IT,Subject Learning,com.microblink.photomath,491218,2,Italy
+IT,Subject Learning,com.babbel.mobile.android.en,485209,3,Italy
+IT,Subject Learning,com.atistudios.mondly.languages,376246,4,Italy
+IT,Subject Learning,it.scuolaelettrica.grammaticale,353055,5,Italy
+IT,Subject Learning,com.busuu.android.enc,344528,6,Italy
+IT,Subject Learning,com.yousician.yousician,325272,7,Italy
+IT,Subject Learning,it.risolviespressioni.app,319290,8,Italy
+IT,Subject Learning,com.memrise.android.memrisecompanion,316815,9,Italy
+IT,Subject Learning,org.geogebra.android,309337,10,Italy
+IT,Teaching and Learning,no.mobitroll.kahoot.android,445089,1,Italy
+IT,Teaching and Learning,eu.spaggiari.classevivastudente,422307,2,Italy
+IT,Teaching and Learning,com.google.android.apps.classroom,396465,3,Italy
+IT,Teaching and Learning,it.pearson.myapp,257042,4,Italy
+IT,Teaching and Learning,com.moodle.moodlemobile,249052,5,Italy
+IT,Teaching and Learning,com.udemy.android,233151,6,Italy
+IT,Teaching and Learning,es.monkimun.lingokids,215860,7,Italy
+IT,Teaching and Learning,com.quizlet.quizletandroid,199167,8,Italy
+IT,Teaching and Learning,com.mondadori.hubsmart,175600,9,Italy
+IT,Teaching and Learning,com.weschool.androidapp,174819,10,Italy
+JP,Cognitive Development,com.hanamarulab.thinkthinkapp,223022,1,Japan
+JP,Cognitive Development,info.nullhouse.braintraining,193807,2,Japan
+JP,Cognitive Development,info.nullhouse.trivia,189446,3,Japan
+JP,Cognitive Development,info.nullhouse.nazotoki,158445,4,Japan
+JP,Cognitive Development,info.nullhouse.machigaisagashi,136987,5,Japan
+JP,Cognitive Development,com.syunkansokudoku,125580,6,Japan
+JP,Cognitive Development,info.nullhouse.kanjinumbercrossword,122195,7,Japan
+JP,Cognitive Development,info.nullhouse.vocabulary,119856,8,Japan
+JP,Cognitive Development,com.monoxer,117464,9,Japan
+JP,Cognitive Development,info.nullhouse.sudoku,115154,10,Japan
+JP,Education Management,jp.ne.benesse.chui.akapen.camera,226877,1,Japan
+JP,Education Management,jp.co.benesse.studycast,184613,2,Japan
+JP,Education Management,jp.classi.portal,175047,3,Japan
+JP,Education Management,jp.bondavi.timer,128827,4,Japan
+JP,Education Management,com.sugojika,101048,5,Japan
+JP,Education Management,jp.android.hiron.TimeSchedule,88492,6,Japan
+JP,Education Management,kr.co.rinasoft.yktime,62415,7,Japan
+JP,Education Management,jp.studysapuri.for_school,42247,8,Japan
+JP,Education Management,com.homework.helper,36129,9,Japan
+JP,Education Management,jp.co.fxss.learningmemory,31404,10,Japan
+JP,Licensing Exam,jp.co.trips.menkyofutsu,356456,1,Japan
+JP,Licensing Exam,jp.flipout.trainingtoeic,222921,2,Japan
+JP,Licensing Exam,jp.co.trips.menkyokari,161477,3,Japan
+JP,Licensing Exam,jp.co.trips.shikakutakken,91545,4,Japan
+JP,Licensing Exam,jp.co.trips.shikakukikenbutsuotsu4,59621,5,Japan
+JP,Licensing Exam,jp.co.trips.shikakuitpassport,41658,6,Japan
+JP,Licensing Exam,jp.neumann.nlineapp,28122,7,Japan
+JP,Licensing Exam,jp.co.trips.menkyogentsuki,23931,8,Japan
+JP,Licensing Exam,com.harusankaigo.kakomon.CareWorker,23575,9,Japan
+JP,Licensing Exam,com.dk2drill,19082,10,Japan
+JP,Non-Education,jp.flipout.dictionarykanjiyomi,451206,1,Japan
+JP,Non-Education,name.choe.hanjahandwritingrecog,440502,2,Japan
+JP,Non-Education,jp.neoscorp.edu.shinchan,423083,3,Japan
+JP,Non-Education,free_translator.jaen,388721,4,Japan
+JP,Non-Education,jp.co.studyswitch.dictionaryippatsu,362569,5,Japan
+JP,Non-Education,com.vitotechnology.StarWalk2Free,340456,6,Japan
+JP,Non-Education,com.ted.android,312240,7,Japan
+JP,Non-Education,cn.danatech.xingseus,291492,8,Japan
+JP,Non-Education,jp.or.nhk.otoppe,236278,9,Japan
+JP,Non-Education,com.escapistgames.starchart,216312,10,Japan
+JP,Parents,com.oni.oni,482868,1,Japan
+JP,Parents,jp.co.mediaactive.ghostcalldx,425913,2,Japan
+JP,Parents,com.codmon2,307010,3,Japan
+JP,Parents,jp.co.benesse.ParentsApp,226517,4,Japan
+JP,Parents,com.justsystems.mimamorutalkapp,219816,5,Japan
+JP,Parents,jp.sughool,165519,6,Japan
+JP,Parents,com.comiruapp,163649,7,Japan
+JP,Parents,jp.classi.ocean,94193,8,Japan
+JP,Parents,jp.c4th.home,87298,9,Japan
+JP,Parents,tv.kidsstar.app.PictShandyGaff,73333,10,Japan
+JP,Preschool,tv.kidsstar.app.PretendLand,482605,1,Japan
+JP,Preschool,com.waocorp.asobaby,411263,2,Japan
+JP,Preschool,jp.smarteducation.manabipack,389799,3,Japan
+JP,Preschool,jp.smarteducation.rhythmanpanman,355260,4,Japan
+JP,Preschool,com.waocorp.waochi.onakameiro,295821,5,Japan
+JP,Preschool,jp.co.softbankmobile.familyappsandroid,290058,6,Japan
+JP,Preschool,jp.or.nhk.kids,198780,7,Japan
+JP,Preschool,com.waocorp.asobabyplus,178424,8,Japan
+JP,Preschool,com.waocorp.asobabyzukan,137505,9,Japan
+JP,Preschool,com.Frii.FriiApp4,137296,10,Japan
+JP,Professional & Career,jp.co.benesse.manabi,134274,1,Japan
+JP,Professional & Career,inc.ann.spi_taisaku,70369,2,Japan
+JP,Professional & Career,biz.yuth.jiji,54960,3,Japan
+JP,Professional & Career,biz.yuth.SPI,39847,4,Japan
+JP,Professional & Career,com.kiyo_learning.studying,35631,5,Japan
+JP,Professional & Career,grune.jp.careworker,23895,6,Japan
+JP,Professional & Career,org.jilnesta.learning.Pocket,23732,7,Japan
+JP,Professional & Career,jp.co.unbalance.edu.fp3,13819,8,Japan
+JP,Professional & Career,biz.yuth.otu4,12332,9,Japan
+JP,Professional & Career,jp.schoo.android.app,12319,10,Japan
+JP,Subject Learning,com.duolingo,489933,1,Japan
+JP,Subject Learning,link.mikan.mikanandroid,476043,2,Japan
+JP,Subject Learning,jp.co.gakkonet.quizninjakanken,455881,3,Japan
+JP,Subject Learning,jp.or.nhk.gogaku,440653,4,Japan
+JP,Subject Learning,jp.co.gakkonet.quizninjategakikanjidrill,436338,5,Japan
+JP,Subject Learning,jp.studysapurienglish.toeic,429539,6,Japan
+JP,Subject Learning,com.microblink.photomath,424227,7,Japan
+JP,Subject Learning,jp.co.gakkonet.trainingsugaku,405774,8,Japan
+JP,Subject Learning,com.nakashimajohn.korean,402215,9,Japan
+JP,Subject Learning,jp.co.gakkonet.trainingshakaijh,391743,10,Japan
+JP,Teaching and Learning,jp.studyplus.android.app,460325,1,Japan
+JP,Teaching and Learning,jp.studysapuri.android,384682,2,Japan
+JP,Teaching and Learning,com.quizlet.quizletandroid,283172,3,Japan
+JP,Teaching and Learning,com.scryva.speedy.android,267952,4,Japan
+JP,Teaching and Learning,com.google.android.apps.classroom,263416,5,Japan
+JP,Teaching and Learning,jp.co.trygroup.tryit.student,220589,6,Japan
+JP,Teaching and Learning,tv.loilo.loilonote_web,172629,7,Japan
+JP,Teaching and Learning,com.udemy.android,151919,8,Japan
+JP,Teaching and Learning,jp.or.nhk.school,149439,9,Japan
+JP,Teaching and Learning,jp.co.alc.booco,142067,10,Japan
+NO,Cognitive Development,com.brainbow.peak.app,265144,1,Norway
+NO,Cognitive Development,com.wonder,192025,2,Norway
+NO,Cognitive Development,air.nn.mobile.app.main,190980,3,Norway
+NO,Cognitive Development,com.lumoslabs.lumosity,170307,4,Norway
+NO,Cognitive Development,org.aztest.iqtest,62978,5,Norway
+NO,Cognitive Development,com.memorado.brain.games,27438,6,Norway
+NO,Cognitive Development,com.mv_nordic.intowords,10444,7,Norway
+NO,Cognitive Development,com.memory.brain.training.games,9858,8,Norway
+NO,Cognitive Development,com.Store.ReaderPro,3473,9,Norway
+NO,Cognitive Development,com.idamusic.lines,2940,10,Norway
+NO,Education Management,no.pocketid.app130627,234200,1,Norway
+NO,Education Management,com.visma.inschoolmobile,132586,2,Norway
+NO,Education Management,no.netlife.itsme,107018,3,Norway
+NO,Education Management,com.cgi.oslomelding,105880,4,Norway
+NO,Education Management,daldev.android.gradehelper,104466,5,Norway
+NO,Education Management,com.grupet.web.app,102833,6,Norway
+NO,Education Management,com.olkwebapprn,101939,7,Norway
+NO,Education Management,com.ist.VigoAppProd,57467,8,Norway
+NO,Education Management,com.inomma.procwise,34790,9,Norway
+NO,Education Management,com.classdojo.android,28448,10,Norway
+NO,Licensing Exam,com.limegreen.app,387694,1,Norway
+NO,Licensing Exam,com.evjenth.anstr.traficsigns,327172,2,Norway
+NO,Licensing Exam,no.prove.android,250701,3,Norway
+NO,Licensing Exam,com.ifinsurance.rookiedriver,236413,4,Norway
+NO,Licensing Exam,com.greyarea.jegerappen,203512,5,Norway
+NO,Licensing Exam,com.evjenth.anstr.theory,201807,6,Norway
+NO,Licensing Exam,gjensidige.drivelog,198138,7,Norway
+NO,Licensing Exam,no.appide.teoriproveg,196008,8,Norway
+NO,Licensing Exam,no.teorikurs.bil,166072,9,Norway
+NO,Licensing Exam,com.greyarea.batforerappen,140601,10,Norway
+NO,Non-Education,com.computas.studentbevis,393892,1,Norway
+NO,Non-Education,com.vitotechnology.StarWalk2Free,369395,2,Norway
+NO,Non-Education,com.tocaboca.tocakitchen,350177,3,Norway
+NO,Non-Education,com.t11.skyviewfree,338869,4,Norway
+NO,Non-Education,org.plantnet,334518,5,Norway
+NO,Non-Education,cn.danatech.xingseus,319107,6,Norway
+NO,Non-Education,com.nicedayapps.iss_free,317134,7,Norway
+NO,Non-Education,com.nelfo.pua.android.stromulykke,291257,8,Norway
+NO,Non-Education,com.blinkslabs.blinkist.android,282703,9,Norway
+NO,Non-Education,no.forlagshuset.akademika,274299,10,Norway
+NO,Parents,com.visma.vfsmobileparentapp,290424,1,Norway
+NO,Parents,parent.vigilo.no.parentapplication,277071,2,Norway
+NO,Parents,com.visma.mykindergartenguardian,219819,3,Norway
+NO,Parents,com.cgi.oslomelding.foresatte,154550,4,Norway
+NO,Parents,com.visma.vfsmobileemployeeapp,115474,5,Norway
+NO,Parents,com.ist.home.miniforumschool,108330,6,Norway
+NO,Parents,com.tieto.se.edumobile,103764,7,Norway
+NO,Parents,com.SkoolerAS.SkoolerParents,95122,8,Norway
+NO,Parents,com.toddle.family,12590,9,Norway
+NO,Parents,no.littsint.app,12526,10,Norway
+NO,Preschool,com.tappyhappy.appforchildren,325640,1,Norway
+NO,Preschool,com.tappyhappy.peekaboo,310668,2,Norway
+NO,Preschool,com.tappyhappy.puzzleforchildren,296542,3,Norway
+NO,Preschool,com.tappyhappy.appforkids,287926,4,Norway
+NO,Preschool,com.tappyhappy.puzzlemagicfree,285001,5,Norway
+NO,Preschool,com.tappyhappy.funfortoddlers,213409,6,Norway
+NO,Preschool,kr.co.smartstudy.babyshark_android_googlemarket,209922,7,Norway
+NO,Preschool,se.mralbert.junior,196071,8,Norway
+NO,Preschool,com.sagosago.World.googleplay,161288,9,Norway
+NO,Preschool,com.playtoddlers.sweethomestories.free,140868,10,Norway
+NO,Professional & Career,no.snapper.coop.extra.tiltopps,188835,1,Norway
+NO,Professional & Career,com.linkedin.android.learning,179347,2,Norway
+NO,Professional & Career,com.elearn.trainor,148168,3,Norway
+NO,Professional & Career,org.coursera.android,75920,4,Norway
+NO,Professional & Career,no.dossier.helse,64431,5,Norway
+NO,Professional & Career,com.attensi.kiwiskills,50162,6,Norway
+NO,Professional & Career,hacking.learnhacking.learn.hack.ethicalhacking.programming.coding.hackerx.cybersecurity,42952,7,Norway
+NO,Professional & Career,com.mentor.mentor,6472,8,Norway
+NO,Professional & Career,com.pluralsight,4119,9,Norway
+NO,Professional & Career,digitalmarketing.digital.marketing.dm.ads.learn.socialmedia.onlinemarketing,3582,10,Norway
+NO,Subject Learning,com.duolingo,502518,1,Norway
+NO,Subject Learning,com.atistudios.mondly.languages,469270,2,Norway
+NO,Subject Learning,com.microblink.photomath,451038,3,Norway
+NO,Subject Learning,com.babbel.mobile.android.en,447034,4,Norway
+NO,Subject Learning,com.yousician.yousician,427172,5,Norway
+NO,Subject Learning,com.memrise.android.memrisecompanion,380971,6,Norway
+NO,Subject Learning,com.funeasylearn.norwegian,373716,7,Norway
+NO,Subject Learning,com.atistudios.italk.nb,370871,8,Norway
+NO,Subject Learning,no.uib.ordbokene,354698,9,Norway
+NO,Subject Learning,com.funeasylearn.phrasebook.norwegian,287137,10,Norway
+NO,Teaching and Learning,no.mobitroll.kahoot.android,501530,1,Norway
+NO,Teaching and Learning,com.itslearning.itslearningintapp,424015,2,Norway
+NO,Teaching and Learning,com.instructure.candroid,411072,3,Norway
+NO,Teaching and Learning,com.quizlet.quizletandroid,381004,4,Norway
+NO,Teaching and Learning,com.google.android.apps.classroom,339863,5,Norway
+NO,Teaching and Learning,es.monkimun.lingokids,331058,6,Norway
+NO,Teaching and Learning,com.udemy.android,276311,7,Norway
+NO,Teaching and Learning,com.attensi.attensipicker,256616,8,Norway
+NO,Teaching and Learning,org.khanacademy.android,213772,9,Norway
+NO,Teaching and Learning,kajabi.kajabiapp,206082,10,Norway
+PL,Cognitive Development,air.nn.mobile.app.main,177682,1,Poland
+PL,Cognitive Development,com.brainbow.peak.app,141952,2,Poland
+PL,Cognitive Development,com.Store.ReaderPro,90420,3,Poland
+PL,Cognitive Development,com.lumoslabs.lumosity,34829,4,Poland
+PL,Cognitive Development,com.memory.brain.training.games,31836,5,Poland
+PL,Cognitive Development,com.wonder,25105,6,Poland
+PL,Cognitive Development,pl.eureka.memorymaster,9544,7,Poland
+PL,Cognitive Development,mowtaki.nowaera.pl,7976,8,Poland
+PL,Cognitive Development,com.mobilicos.howtomakeorigami,6424,9,Poland
+PL,Cognitive Development,org.aztest.iqtest,6421,10,Poland
+PL,Education Management,daldev.android.gradehelper,199167,1,Poland
+PL,Education Management,io.github.wulkanowy,181670,2,Poland
+PL,Education Management,pl.librus.synergia,169012,3,Poland
+PL,Education Management,pl.mobidziennik.web,144666,4,Poland
+PL,Education Management,com.diy.school,124942,5,Poland
+PL,Education Management,com.classdojo.android,116482,6,Poland
+PL,Education Management,com.flatdesignapps.dzienszkolnypl,67365,7,Poland
+PL,Education Management,pl.wsb.moja,37859,8,Poland
+PL,Education Management,pl.vulcan.lekcja,36532,9,Poland
+PL,Education Management,com.inso.app,30572,10,Poland
+PL,Licensing Exam,pl.teleit.zdamyto.testyprawojazdyb,473676,1,Poland
+PL,Licensing Exam,pl.prawo_jazdy_360,464776,2,Poland
+PL,Licensing Exam,net.clickclickdrive.mobile.pl,219719,3,Poland
+PL,Licensing Exam,eu.grupaimage.imageprawojazdy,218875,4,Poland
+PL,Licensing Exam,ray.prawo_jazdy,209740,5,Poland
+PL,Licensing Exam,com.heronus.znamznaki,192942,6,Poland
+PL,Licensing Exam,pl.ekierowca.prawko_pl,154219,7,Poland
+PL,Licensing Exam,pl.webnec.testyprawojazdy,120264,8,Poland
+PL,Licensing Exam,com.shoyo.znakovi,107601,9,Poland
+PL,Licensing Exam,com.naukajazdy,99916,10,Poland
+PL,Non-Education,pl.diki,418726,1,Poland
+PL,Non-Education,com.tocaboca.tocakitchen,367671,2,Poland
+PL,Non-Education,free_translator.depl,318090,3,Poland
+PL,Non-Education,pl.infoapps.qrcodes,317578,4,Poland
+PL,Non-Education,com.nicedayapps.iss_free,313859,5,Poland
+PL,Non-Education,com.vitotechnology.StarWalk2Free,306679,6,Poland
+PL,Non-Education,org.plantnet,297602,7,Poland
+PL,Non-Education,com.bible.kids,292853,8,Poland
+PL,Non-Education,cn.danatech.xingseus,283969,9,Poland
+PL,Non-Education,com.miga.world,260256,10,Poland
+PL,Parents,pl.librus.synergiaDru2,403212,1,Poland
+PL,Parents,pl.edu.vulcan.hebe,175348,2,Poland
+PL,Parents,com.livekidmobileadmin,169957,3,Poland
+PL,Parents,pl.librus.synergiaJst,165953,4,Poland
+PL,Parents,pl.szczodrzynski.edziennik,113703,5,Poland
+PL,Parents,com.softwarehub.for_parents,38615,6,Poland
+PL,Parents,com.kaspersky.safekids,36976,7,Poland
+PL,Parents,pl.bialystok.zeto.prymus,28873,8,Poland
+PL,Parents,de.wolterskluwer.iprzedszkole,25102,9,Poland
+PL,Parents,com.novakid.student,22494,10,Poland
+PL,Preschool,ai.mybuddy.talkingflashcards_new,265198,1,Poland
+PL,Preschool,com.forqan.tech.Jobs,217869,2,Poland
+PL,Preschool,com.playtoddlers.sweethomestories.free,178443,3,Poland
+PL,Preschool,com.acamar.bingwatchplaylearn,166509,4,Poland
+PL,Preschool,com.playtoddlers.happydaycarestories.free,139913,5,Poland
+PL,Preschool,carrioncastillo.puntos.animales,120955,6,Poland
+PL,Preschool,org.scratchjr.android,115312,7,Poland
+PL,Preschool,com.logicappkids,98150,8,Poland
+PL,Preschool,kr.co.smartstudy.babyshark_android_googlemarket,93027,9,Poland
+PL,Preschool,com.storytoys.lego.duplo.marvel.spiderman.avengers.kids.preschool.free.googleplay,88603,10,Poland
+PL,Professional & Career,com.englishscore,42944,1,Poland
+PL,Professional & Career,com.linkedin.android.learning,20719,2,Poland
+PL,Professional & Career,hacking.learnhacking.learn.hack.ethicalhacking.programming.coding.hackerx.cybersecurity,12889,3,Poland
+PL,Professional & Career,recruit.wcy.wat.pl.wat_rekrut,1199,4,Poland
+PL,Professional & Career,com.vistalizer.vfe30US,928,5,Poland
+PL,Professional & Career,pl.wiecejnizlek.wnlmobile,861,6,Poland
+PL,Professional & Career,org.coursera.android,812,7,Poland
+PL,Professional & Career,com.pluralsight,737,8,Poland
+PL,Professional & Career,com.testowanie.oprogramowania,548,9,Poland
+PL,Professional & Career,digitalmarketing.digital.marketing.dm.ads.learn.socialmedia.onlinemarketing,526,10,Poland
+PL,Subject Learning,com.duolingo,502905,1,Poland
+PL,Subject Learning,com.busuu.android.enc,467639,2,Poland
+PL,Subject Learning,com.microblink.photomath,466849,3,Poland
+PL,Subject Learning,com.kkk.english_words,415124,4,Poland
+PL,Subject Learning,com.memrise.android.memrisecompanion,414603,5,Poland
+PL,Subject Learning,air.biz.krokodyl.Fiszkoteka,414361,6,Poland
+PL,Subject Learning,co.brainly,410822,7,Poland
+PL,Subject Learning,pl.etutor.mobile,397926,8,Poland
+PL,Subject Learning,com.atistudios.mondly.languages,396832,9,Poland
+PL,Subject Learning,com.babbel.mobile.android.en,388332,10,Poland
+PL,Teaching and Learning,com.quizlet.quizletandroid,451882,1,Poland
+PL,Teaching and Learning,no.mobitroll.kahoot.android,435370,2,Poland
+PL,Teaching and Learning,com.swmansion.dajspisac,376753,3,Poland
+PL,Teaching and Learning,com.udemy.android,266735,4,Poland
+PL,Teaching and Learning,es.monkimun.lingokids,254788,5,Poland
+PL,Teaching and Learning,com.somniso.lekturowo,195202,6,Poland
+PL,Teaching and Learning,com.google.android.apps.classroom,192326,7,Poland
+PL,Teaching and Learning,com.quizizz_mobile,144325,8,Poland
+PL,Teaching and Learning,com.moodle.moodlemobile,129573,9,Poland
+PL,Teaching and Learning,pl.matematykagryzie.app,123414,10,Poland
+US,Cognitive Development,com.wonder,402289,1,United States
+US,Cognitive Development,com.lumoslabs.lumosity,304029,2,United States
+US,Cognitive Development,com.brainbow.peak.app,217553,3,United States
+US,Cognitive Development,air.nn.mobile.app.main,151135,4,United States
+US,Cognitive Development,com.elektron.mindpal,97398,5,United States
+US,Cognitive Development,com.idamusic.lines,31575,6,United States
+US,Cognitive Development,org.aztest.iqtest,28167,7,United States
+US,Cognitive Development,com.monclarity.brainwell,16611,8,United States
+US,Cognitive Development,com.memory.brain.training.games,10304,9,United States
+US,Cognitive Development,com.memoryos.app,5494,10,United States
+US,Education Management,com.classdojo.android,469659,1,United States
+US,Education Management,com.skyward.mobileaccess,236919,2,United States
+US,Education Management,com.infinitecampus.student.campusportalhybrid,167774,3,United States
+US,Education Management,com.kinderlime.dev,152195,4,United States
+US,Education Management,com.FreeLance.StudentVUE,135401,5,United States
+US,Education Management,daldev.android.gradehelper,101809,6,United States
+US,Education Management,com.aeries.mobileportal,88454,7,United States
+US,Education Management,com.classlink.launchpad.android,70495,8,United States
+US,Education Management,com.eab.se,28724,9,United States
+US,Education Management,com.myhomeowork,14234,10,United States
+US,Licensing Exam,com.driverlicenseapp,144273,1,United States
+US,Licensing Exam,com.dmvwrittentest.android,138658,2,United States
+US,Licensing Exam,com.jeffreydiaz.android.app.cdlprep,133415,3,United States
+US,Licensing Exam,com.bubblingiso.uscitizenshiptest,52749,4,United States
+US,Licensing Exam,com.bubblingiso.CDL,50043,5,United States
+US,Licensing Exam,com.vialsoft.cdlusafreemium,49610,6,United States
+US,Licensing Exam,com.creatorfactory.citizen.us.audio,32808,7,United States
+US,Licensing Exam,com.vialsoft.driversedfreemium,27875,8,United States
+US,Licensing Exam,com.nicusa.pdt,23649,9,United States
+US,Licensing Exam,com.saferoadsalliance.roadready,22725,10,United States
+US,Non-Education,org.pbskids.video,476475,1,United States
+US,Non-Education,com.tocaboca.tocakitchen,397797,2,United States
+US,Non-Education,com.t11.skyviewfree,391473,3,United States
+US,Non-Education,cn.danatech.xingseus,387657,4,United States
+US,Non-Education,com.vitotechnology.StarWalk2Free,360986,5,United States
+US,Non-Education,com.PYOPYO.StarTracker,354109,6,United States
+US,Non-Education,com.bible.kids,313306,7,United States
+US,Non-Education,org.plantnet,309807,8,United States
+US,Non-Education,com.nicedayapps.iss_free,309056,9,United States
+US,Non-Education,com.tocaboca.tocahairsalon4,259742,10,United States
+US,Parents,com.remind101,484469,1,United States
+US,Parents,com.powerschool.portal,385827,2,United States
+US,Parents,com.infinitecampus.parent.campusportalhybrid,146827,3,United States
+US,Parents,com.hss.msb,137838,4,United States
+US,Parents,com.synovia.herecomesthebus,98586,5,United States
+US,Parents,net.bloomz,96419,6,United States
+US,Parents,org.talkingpoints.parents,77602,7,United States
+US,Parents,com.FreeLance.ParentVUE,75307,8,United States
+US,Parents,com.classtag,73575,9,United States
+US,Parents,tinytap.kids.learning.games,48495,10,United States
+US,Preschool,com.nick.noggin,368607,1,United States
+US,Preschool,kr.co.smartstudy.babyshark_android_googlemarket,356790,2,United States
+US,Preschool,org.khankids.android,266068,3,United States
+US,Preschool,co.kidcasa.app,261955,4,United States
+US,Preschool,kr.co.smartstudy.singingphone_android_googlemarket,246458,5,United States
+US,Preschool,com.sagosago.World.googleplay,239522,6,United States
+US,Preschool,forqan.tech.babypuzzles_edu.ads,190249,7,United States
+US,Preschool,com.playtoddlers.sweethomestories.free,188340,8,United States
+US,Preschool,com.forqan.tech.Jobs,163505,9,United States
+US,Preschool,com.playtoddlers.happydaycarestories.free,154088,10,United States
+US,Professional & Career,org.coursera.android,249262,1,United States
+US,Professional & Career,com.linkedin.android.learning,216363,2,United States
+US,Professional & Career,hacking.learnhacking.learn.hack.ethicalhacking.programming.coding.hackerx.cybersecurity,50440,3,United States
+US,Professional & Career,com.coco.asvab,14229,4,United States
+US,Professional & Career,com.csod.learning,12821,5,United States
+US,Professional & Career,digitalmarketing.digital.marketing.dm.ads.learn.socialmedia.onlinemarketing,12426,6,United States
+US,Professional & Career,com.shl.talentcentral,10528,7,United States
+US,Professional & Career,com.careerfairplus.cf_plus,10200,8,United States
+US,Professional & Career,com.reliaslearnerapp.learnerApp,7563,9,United States
+US,Professional & Career,com.schoox,5765,10,United States
+US,Subject Learning,com.duolingo,505143,1,United States
+US,Subject Learning,com.microblink.photomath,479545,2,United States
+US,Subject Learning,com.babbel.mobile.android.en,458158,3,United States
+US,Subject Learning,com.yousician.yousician,427750,4,United States
+US,Subject Learning,com.bagatrix.mathway.android,420988,5,United States
+US,Subject Learning,air.com.rosettastone.mobile.CoursePlayer,419899,6,United States
+US,Subject Learning,co.brainly,385471,7,United States
+US,Subject Learning,curso.d.ingles.gratis,375389,8,United States
+US,Subject Learning,com.devsense.symbolab,300759,9,United States
+US,Subject Learning,com.memrise.android.memrisecompanion,273626,10,United States
+US,Teaching and Learning,mobi.abcmouse.academy_goo,486853,1,United States
+US,Teaching and Learning,no.mobitroll.kahoot.android,481500,2,United States
+US,Teaching and Learning,com.instructure.candroid,452245,3,United States
+US,Teaching and Learning,com.quizlet.quizletandroid,433887,4,United States
+US,Teaching and Learning,com.google.android.apps.classroom,432460,5,United States
+US,Teaching and Learning,air.com.starfall.more,409867,6,United States
+US,Teaching and Learning,com.getepic.Epic,401067,7,United States
+US,Teaching and Learning,org.khanacademy.android,363244,8,United States
+US,Teaching and Learning,com.udemy.android,320121,9,United States
+US,Teaching and Learning,com.schoology.app,278429,10,United States
